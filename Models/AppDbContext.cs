@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EF2
+namespace WebAppLibros.Models
 {
     public class AppDBcontext : DbContext
     {
@@ -15,5 +15,8 @@ namespace EF2
         
         }
         public DbSet<Libro> Libros { get; set; }
+        public DbSet<Genero> Generos { get; set; }
+        public DbSet<UbicacionBiblioteca> UbicacionesBiblioteca { get; set; }
+
     }
 }
