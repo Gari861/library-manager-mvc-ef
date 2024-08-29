@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System.Configuration;
+using WebAppLibros.Models;
+
 namespace WebAppLibros
 {
     public class Program
@@ -8,6 +13,10 @@ namespace WebAppLibros
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //lo que agrego de dependencias
+            builder.Services.AddDbContext<AppDBcontext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("cadenal")));
+
 
             var app = builder.Build();
 

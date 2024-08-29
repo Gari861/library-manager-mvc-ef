@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\mvcgit\\mvc.ef.crud\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\mvcgit\\mvc.ef.crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\mvcgit\\mvc.ef.crud\\controllers\\ubicacionesbibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:controllers\\ubicacionesbibliotecacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\mvcgit\\mvc.ef.crud\\models\\ubicacionbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:models\\ubicacionbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UbicacionesBibliotecaController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Controllers\\UbicacionesBibliotecaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UbicacionesBibliotecaController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Controllers\\UbicacionesBibliotecaController.cs",
-              "RelativeToolTip": "Controllers\\UbicacionesBibliotecaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:46:37.966Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-29T20:47:15.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibrosController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Controllers\\LibrosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Controllers\\LibrosController.cs",
-              "RelativeToolTip": "Controllers\\LibrosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UbicacionBiblioteca.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Models\\UbicacionBiblioteca.cs",
+              "RelativeDocumentMoniker": "Models\\UbicacionBiblioteca.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVCGIT\\MVC.EF.CRUD\\Models\\UbicacionBiblioteca.cs",
+              "RelativeToolTip": "Models\\UbicacionBiblioteca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:45:30.837Z",
+              "WhenOpened": "2024-08-29T19:53:29.147Z",
               "EditorCaption": ""
             }
           ]

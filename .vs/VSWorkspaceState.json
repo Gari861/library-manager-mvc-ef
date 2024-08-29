@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Controllers",
     "\\Models"
   ],
-  "SelectedNode": "\\Models\\ErrorViewModel.cs",
+  "SelectedNode": "\\Controllers\\LibrosController.cs",
   "PreviewInSolutionExplorer": false
 }

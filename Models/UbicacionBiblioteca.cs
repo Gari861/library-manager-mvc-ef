@@ -1,10 +1,13 @@
-﻿namespace WebAppLibros.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebAppLibros.Models
 {
     public class UbicacionBiblioteca
     {
         //La clave llamarla Id
         public int Id { get; set; }
         public string? Estante { get; set; }
+        [Display(Name = "Sección")]
         public string? Seccion { get; set; }
 
         //relación de uno a muchos

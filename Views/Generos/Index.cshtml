@@ -1,10 +1,10 @@
-﻿@model IEnumerable<WebAppLibros.Models.UbicacionBiblioteca>
+﻿@model IEnumerable<WebAppLibros.Models.Genero>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>UBICACIONES EN BIBLIOTECA</h1>
+<h1>GENEROS DE LIBROS</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Estante)
+                @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Seccion)
+                @Html.DisplayNameFor(model => model.Detalle)
             </th>
             <th></th>
         </tr>
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Estante)
+                @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Seccion)
+                @Html.DisplayFor(modelItem => item.Detalle)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
