@@ -11,7 +11,7 @@ namespace WebAppLibros.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Labo4;Trusted_Connection=True;MultipleActiveResultSets=True");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Labo4-EF-MVC;Trusted_Connection=True;MultipleActiveResultSets=True");
         
         }
         public DbSet<Libro> Libros { get; set; }

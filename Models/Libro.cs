@@ -8,16 +8,16 @@ namespace WebAppLibros.Models
 {
     public class Libro
     {
-        public int IdLibro { get; set; }
+        public int Id { get; set; }
         public string? Titulo  { get; set; }
         public int CantidadCopias { get; set; }
 
         //relación de uno a muchos
         public int IdGenero { get; set; }
-        public Genero genero { get; set; }
+        public Genero? genero { get; set; }
 
         //relacion de uno a muchos
         public int IdUbicacion { get; set; }
-        public UbicacionBiblioteca ubicacionBiblioteca { get; set; }
+        public UbicacionBiblioteca? ubicacionBiblioteca { get; set; }
     }
 }

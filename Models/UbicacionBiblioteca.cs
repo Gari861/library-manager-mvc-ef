@@ -2,12 +2,13 @@
 {
     public class UbicacionBiblioteca
     {
-        public int IdUbicacion { get; set; }
+        //La clave llamarla Id
+        public int Id { get; set; }
         public string? Estante { get; set; }
         public string? Seccion { get; set; }
 
         //relación de uno a muchos
-        public List<Libro> Libros { get; set; }
+        public List<Libro>? Libros { get; set; }
     }
 
 
