@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
+    "\\Migrations",
     "\\Models"
   ],
-  "SelectedNode": "\\Models\\AppDbContext.cs",
+  "SelectedNode": "\\WebAppLibros.sln",
   "PreviewInSolutionExplorer": false
 }

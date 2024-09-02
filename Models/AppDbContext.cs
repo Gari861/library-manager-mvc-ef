@@ -46,9 +46,12 @@ namespace WebAppLibros.Models
 
         public DbSet<Libro> Libros { get; set; }
         public DbSet<UbicacionBiblioteca> UbicacionesBiblioteca { get; set; }
-        public DbSet<Genero> Generos { get; set; }
+        public DbSet<Estado> Estados { get; set; }
+        public DbSet<Idioma> Idiomas { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<LibroCategoria> LibroCategorias { get; set; }
+        public DbSet<LibroCategoria> LibrosCategorias { get; set; }
+        public DbSet<Autor> Autores { get; set; }
+        public DbSet<LibroAutor> LibrosAutores { get; set; }
     }
 
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,22 +18,42 @@ namespace WebAppLibros.Models
         [Display(Name = "Título")]
         public string? Titulo { get; set; }
 
-        [Display(Name = "Cantidad de copias")]
+        [Display(Name = "Fecha Publicación")]
+        DateTime? Fechapublicacion { get; set; }
+
+        [Display(Name = "Cantidad copias")]
         [Required(ErrorMessage = "La cantidad de copias es obligatoria")]
         public int CantidadCopias { get; set; }
 
-        //Relacion de uno a uno
+        [Display(Name = "Cantidad páginas")]
+        public int CantidadPags { get; set; }
+
+        [Required(ErrorMessage = "La calificación es obligatoria")]
+        [Display(Name = "Calificación Promedio")]
+        public double CalificacionPromedio {  get; set; }
+
+        //Relacion UNO a UNO
+
         [Display(Name = "Ubicación")]
         public UbicacionBiblioteca? UbicacionBiblioteca { get; set; }
+        //LA CLAVE FORÁNEA ESTA EN LA CLASE UBICACIÓN
 
-        //Relación de uno a muchos
-        [Display(Name = "Género")]
-        public int IdGenero { get; set; } //LA CLAV FORÁNEA ESTÁ EN LIBRO
-        [ForeignKey(nameof(IdGenero))]
-        public Genero? Genero { get; set; }
+        //Relación UNO A MUCHOS
 
-        //Relación de muchos a muchos
+        [Required(ErrorMessage = "El Estado es obligatorio")]
+        [Display(Name = "Estado")]
+        public int IdEstado { get; set; }
+        [ForeignKey(nameof(IdEstado))]
+        public string? Estado { get; set; }
+
+        [Display(Name = "Idioma")]
+        [Required(ErrorMessage = "El Idioma es obligatorio")]
+        public int IdIdioma { get; set; }
+        [ForeignKey(nameof(IdIdioma))]
+        public string? Idioma { get; set; }
+
+        //Relación MUCHOS A MUCHOS
         public List<LibroCategoria>? LibrosCategorias { get; set; }
-
+        public  List<LibroAutor>? LibrosAutores { get; set; }
     }
 }

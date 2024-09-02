@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebAppLibros.Models.UbicacionBiblioteca>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Estante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Libro)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Libro.Titulo)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdUbicacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdUbicacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdUbicacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
