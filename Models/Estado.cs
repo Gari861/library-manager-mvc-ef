@@ -7,5 +7,8 @@ namespace WebAppLibros.Models
         [Key]
         public int IdEstado { get; set; }
         public string? Condición { get; set; }
+
+        //RELACIÓN
+        public List<Libro>? Libros { get; set; }
     }
 }
