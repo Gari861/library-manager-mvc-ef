@@ -7,6 +7,9 @@ namespace WebAppLibros.Models
     {
         [Key]
         public int IdUbicacion { get; set; }
+
+        [Required(ErrorMessage = "El Estante es obligatorio")]
+        [Display(Name = "Estante")]
         public string? Estante { get; set; }
         [Display(Name = "Sección")]
         public string? Seccion { get; set; }

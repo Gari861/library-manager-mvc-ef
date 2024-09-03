@@ -11,7 +11,5 @@ namespace WebAppLibros.Models
         public int IdLibro { get; set; }
         [ForeignKey(nameof(IdLibro))]
         public Libro? Libro { get; set; }
-        
-        public string? Nombre { get; set; }
     }
 }

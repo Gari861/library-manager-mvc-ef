@@ -6,6 +6,8 @@ namespace WebAppLibros.Models
     {
         [Key]
         public int IdIdioma { get; set; }
+        [Required(ErrorMessage = "El Idioma es obligatorio")]
+        [Display(Name = "Idioma del Libro")]
         public string? Tipo { get; set; }
 
         //RELACIÓN

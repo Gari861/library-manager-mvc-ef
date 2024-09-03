@@ -30,6 +30,7 @@ namespace WebAppLibros.Models
 
         [Required(ErrorMessage = "La calificación es obligatoria")]
         [Display(Name = "Calificación Promedio")]
+        [Range(0,5)]
         public double CalificacionPromedio {  get; set; }
 
         //Relacion UNO a UNO

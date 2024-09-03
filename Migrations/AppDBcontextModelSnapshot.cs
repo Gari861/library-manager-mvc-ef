@@ -29,6 +29,14 @@ namespace WebAppLibros.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAutor"));
 
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("IdAutor");
 
                     b.ToTable("Autores");
@@ -41,6 +49,10 @@ namespace WebAppLibros.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCategoria"));
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdCategoria");
 
@@ -56,6 +68,7 @@ namespace WebAppLibros.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdEstado"));
 
                     b.Property<string>("Condición")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdEstado");
@@ -72,6 +85,7 @@ namespace WebAppLibros.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIdioma"));
 
                     b.Property<string>("Tipo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdIdioma");
@@ -123,9 +137,6 @@ namespace WebAppLibros.Migrations
                     b.Property<int>("IdAutor")
                         .HasColumnType("int");
 
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("IdLibro", "IdAutor");
 
                     b.HasIndex("IdAutor");
@@ -140,9 +151,6 @@ namespace WebAppLibros.Migrations
 
                     b.Property<int>("IdCategoria")
                         .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdLibro", "IdCategoria");
 
@@ -160,6 +168,7 @@ namespace WebAppLibros.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdUbicacion"));
 
                     b.Property<string>("Estante")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdLibro")
