@@ -17,19 +17,25 @@ namespace WebAppLibros.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Relación uno a uno con UbicacionBiblioteca
+            // Relación UNO A UNO 
             modelBuilder.Entity<Libro>()
                 .HasOne(l => l.UbicacionBiblioteca)
                 .WithOne(u => u.Libro)
                 .HasForeignKey<UbicacionBiblioteca>(u => u.IdLibro);
 
-            // Relación uno a muchos con Genero
+            // Relación UNO A MUCHOS
             modelBuilder.Entity<Libro>()
-                .HasOne(l => l.Genero)
+                .HasOne(l => l.Idioma)
                 .WithMany(g => g.Libros)
-                .HasForeignKey(l => l.IdGenero);
+                .HasForeignKey(l => l.IdIdioma);       
+            
+            modelBuilder.Entity<Libro>()
+                .HasOne(l => l.Estado)
+                .WithMany(g => g.Libros)
+                .HasForeignKey(l => l.IdEstado);
 
-            // Relación muchos a muchos con Categoria
+
+            // Relación MUCHOS A MUCHOS
             modelBuilder.Entity<LibroCategoria>()
                 .HasKey(lc => new { lc.IdLibro, lc.IdCategoria });
 
@@ -42,6 +48,19 @@ namespace WebAppLibros.Models
                 .HasOne(lc => lc.Categoria)
                 .WithMany(c => c.LibrosCategorias)
                 .HasForeignKey(lc => lc.IdCategoria);
+            
+            modelBuilder.Entity<LibroAutor>()
+                .HasKey(lc => new { lc.IdLibro, lc.IdAutor });
+
+            modelBuilder.Entity<LibroAutor>()
+                .HasOne(lc => lc.Libro)
+                .WithMany(l => l.LibrosAutores)
+                .HasForeignKey(lc => lc.IdLibro);
+
+            modelBuilder.Entity<LibroAutor>()
+                .HasOne(lc => lc.Autor)
+                .WithMany(c => c.LibroAutores)
+                .HasForeignKey(lc => lc.IdAutor);
         }
 
         public DbSet<Libro> Libros { get; set; }

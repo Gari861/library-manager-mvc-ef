@@ -44,13 +44,13 @@ namespace WebAppLibros.Models
         [Display(Name = "Estado")]
         public int IdEstado { get; set; }
         [ForeignKey(nameof(IdEstado))]
-        public string? Estado { get; set; }
+        public Estado? Estado { get; set; }
 
         [Display(Name = "Idioma")]
         [Required(ErrorMessage = "El Idioma es obligatorio")]
         public int IdIdioma { get; set; }
         [ForeignKey(nameof(IdIdioma))]
-        public string? Idioma { get; set; }
+        public Idioma? Idioma { get; set; }
 
         //Relación MUCHOS A MUCHOS
         public List<LibroCategoria>? LibrosCategorias { get; set; }

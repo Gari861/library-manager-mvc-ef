@@ -8,8 +8,8 @@ namespace WebAppLibros.Models
         [ForeignKey(nameof(IdAutor))]
         public Autor? Autor { get; set; }
 
-        public int IdLIbro { get; set; }
-        [ForeignKey(nameof(IdLIbro))]
+        public int IdLibro { get; set; }
+        [ForeignKey(nameof(IdLibro))]
         public Libro? Libro { get; set; }
         
         public string? Nombre { get; set; }
