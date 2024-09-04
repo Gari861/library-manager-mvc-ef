@@ -13,15 +13,16 @@ namespace WebAppLibros.Controllers
     {
         private readonly AppDBcontext _context;
 
-        //public IdiomasController(AppDBcontext context)
-        //{
-        //    _context = context;
-        //}
-
-        public IdiomasController()
+        // inyección de dependencia SQL
+        public IdiomasController(AppDBcontext context)
         {
-            _context = new AppDBcontext();
+            _context = context;
         }
+
+        //public IdiomasController()
+        //{
+        //    _context = new AppDBcontext();
+        //}
 
         // GET: Idiomas
         public async Task<IActionResult> Index()

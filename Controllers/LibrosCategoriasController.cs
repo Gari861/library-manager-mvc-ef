@@ -13,15 +13,16 @@ namespace WebAppLibros.Controllers
     {
         private readonly AppDBcontext _context;
 
-        //public LibrosCategoriasController(AppDBcontext context)
-        //{
-        //    _context = context;
-        //}
-
-        public LibrosCategoriasController()
+        // inyección de dependencia SQL
+        public LibrosCategoriasController(AppDBcontext context)
         {
-            _context = new AppDBcontext();
+            _context = context;
         }
+
+        //public LibrosCategoriasController()
+        //{
+        //    _context = new AppDBcontext();
+        //}
 
         // GET: LibrosCategorias
         public async Task<IActionResult> Index()

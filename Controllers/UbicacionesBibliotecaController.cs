@@ -13,15 +13,16 @@ namespace WebAppLibros.Controllers
     {
         private readonly AppDBcontext _context;
 
-        //public UbicacionesBibliotecaController(AppDBcontext context)
-        //{
-        //    _context = context;
-        //}
-
-        public UbicacionesBibliotecaController()
+        // inyección de dependencia SQL
+        public UbicacionesBibliotecaController(AppDBcontext context)
         {
-            _context = new AppDBcontext();
+            _context = context;
         }
+
+        //public UbicacionesBibliotecaController()
+        //{
+        //    _context = new AppDBcontext();
+        //}
 
         // GET: UbicacionesBiblioteca
         public async Task<IActionResult> Index()
