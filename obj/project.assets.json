@@ -7857,11 +7857,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\mvc\\MVC.EF.CRUD\\WebAppLibros.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\MVC.EF.CRUD\\WebAppLibros.csproj",
       "projectName": "WebAppLibros",
-      "projectPath": "C:\\Users\\User\\Desktop\\mvc\\MVC.EF.CRUD\\WebAppLibros.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\MVC.EF.CRUD\\WebAppLibros.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\mvc\\MVC.EF.CRUD\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\MVC.EF.CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,6 +6,8 @@ namespace WebAppLibros.Models
     {
         [Key]
         public int IdEstado { get; set; }
+        [Required(ErrorMessage = "La condición es obligatoria")]
+        [Display(Name = "Estado del Libro")]
         public string? Condición { get; set; }
 
         //RELACIÓN
