@@ -4,6 +4,6 @@
     "\\Controllers",
     "\\Models"
   ],
-  "SelectedNode": "\\WebAppLibros.sln",
+  "SelectedNode": "\\Controllers\\LibrosCategoriasController.cs",
   "PreviewInSolutionExplorer": false
 }

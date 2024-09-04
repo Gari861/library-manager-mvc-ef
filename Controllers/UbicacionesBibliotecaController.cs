@@ -50,11 +50,21 @@ namespace WebAppLibros.Controllers
         }
 
         // GET: UbicacionesBiblioteca/Create
+
         public IActionResult Create()
         {
-            ViewData["IdLibro"] = new SelectList(_context.Libros, "IdLibro", "Titulo");
+            // Lista de libros que no tienen una ubicación asignada
+            var librosSinUbicacion = _context.Libros
+                .Where(libro => libro.UbicacionBiblioteca == null)
+                .ToList();
+
+            // Crear un SelectList con los libros filtrados
+            ViewData["IdLibro"] = new SelectList(librosSinUbicacion, "IdLibro", "Titulo");
+
+            //ViewData["IdLibro"] = new SelectList(_context.Libros, "IdLibro", "Titulo");
             return View();
         }
+
 
         // POST: UbicacionesBiblioteca/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

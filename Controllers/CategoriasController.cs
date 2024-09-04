@@ -18,9 +18,9 @@ namespace WebAppLibros.Controllers
         //    _context = context;
         //}
 
-        public CategoriasController(AppDBcontext context)
+        public CategoriasController()
         {
-            _context = context;
+            _context = new AppDBcontext();
         }
 
         // GET: Categorias

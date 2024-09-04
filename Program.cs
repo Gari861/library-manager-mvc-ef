@@ -39,6 +39,12 @@ namespace WebAppLibros
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            //probandoagregarruta
+            app.MapControllerRoute(
+                name: "detailsLibroCategoria",
+                pattern: "LibrosCategorias/Details/{idLibro}/{idCategoria}",
+                defaults: new { controller = "LibrosCategorias", action = "Edit" });
+
             app.Run();
         }
     }

@@ -77,22 +77,45 @@ namespace WebAppLibros.Controllers
         }
 
         // GET: LibrosCategorias/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        //public async Task<IActionResult> Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var libroCategoria = await _context.LibrosCategorias.FindAsync(id);
+        //    if (libroCategoria == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Tipo", libroCategoria.IdCategoria);
+        //    ViewData["IdLibro"] = new SelectList(_context.Libros, "IdLibro", "Titulo", libroCategoria.IdLibro);
+        //    return View(libroCategoria);
+        //}
+        // GET: LibrosCategorias/Edit/5/3
+        public async Task<IActionResult> Edit(int? idLibro, int? idCategoria)
         {
-            if (id == null)
+            if (idLibro == null || idCategoria == null)
             {
                 return NotFound();
             }
 
-            var libroCategoria = await _context.LibrosCategorias.FindAsync(id);
+            var libroCategoria = await _context.LibrosCategorias
+                .FindAsync(idLibro, idCategoria); // Usa ambos parámetros para encontrar el registro
+
             if (libroCategoria == null)
             {
                 return NotFound();
             }
+
+            // Rellena los datos para los campos de selección en la vista
             ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Tipo", libroCategoria.IdCategoria);
             ViewData["IdLibro"] = new SelectList(_context.Libros, "IdLibro", "Titulo", libroCategoria.IdLibro);
+
             return View(libroCategoria);
         }
+
 
         // POST: LibrosCategorias/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.

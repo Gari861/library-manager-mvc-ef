@@ -5,6 +5,7 @@ namespace WebAppLibros.Models
     public class LibroAutor
     {
         public int IdAutor { get; set; }
+
         [ForeignKey(nameof(IdAutor))]
         public Autor? Autor { get; set; }
 

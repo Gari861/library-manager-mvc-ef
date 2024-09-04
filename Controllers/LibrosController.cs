@@ -74,6 +74,7 @@ namespace WebAppLibros.Controllers
             }
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
+
             return View(libro);
         }
 
@@ -90,8 +91,8 @@ namespace WebAppLibros.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
-            ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
+            ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "Condición", libro.IdEstado);
+            ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo", libro.IdIdioma);
             return View(libro);
         }
 
