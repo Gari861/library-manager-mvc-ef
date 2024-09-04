@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System.Configuration;
+using System.Globalization;
 using WebAppLibros.Models;
 
 namespace WebAppLibros
@@ -10,12 +11,16 @@ namespace WebAppLibros
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var cultureInfo = new CultureInfo("en-US");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            //lo que agrego de dependencias
-            //builder.Services.AddDbContext<AppDBcontext>(options =>
-            //options.UseSqlServer(builder.Configuration.GetConnectionString("cadenal")));
+
+            // inyección de dependencia SQL
+            builder.Services.AddDbContext<AppDBcontext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("cadena")));
 
 
             var app = builder.Build();

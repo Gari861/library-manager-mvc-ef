@@ -13,15 +13,16 @@ namespace WebAppLibros.Controllers
     {
         private readonly AppDBcontext _context;
 
-        //public EstadosController(AppDBcontext context)
-        //{
-        //    _context = context;
-        //}
-
-        public EstadosController()
+        // inyección de dependencia SQL
+        public EstadosController(AppDBcontext context)
         {
-            _context = new AppDBcontext();
+            _context = context;
         }
+
+        //public EstadosController()
+        //{
+        //    _context = new AppDBcontext();
+        //}
 
         // GET: Estados
         public async Task<IActionResult> Index()

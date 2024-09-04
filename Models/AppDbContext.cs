@@ -10,10 +10,18 @@ namespace WebAppLibros.Models
 {
     public class AppDBcontext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=Labo4; Trusted_Connection=True; MultipleActiveResultSets=True");
+        //}
+
+        // inyección de dependencia SQL
+        public AppDBcontext(DbContextOptions<AppDBcontext> options)
+        : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=Labo4; Trusted_Connection=True; MultipleActiveResultSets=True");
+
         }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
