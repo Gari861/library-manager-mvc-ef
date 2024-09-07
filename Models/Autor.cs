@@ -15,6 +15,7 @@ namespace WebAppLibros.Models
         [Display(Name = "Apellido")]
         public string? Apellido { get; set; }
 
+        //Relación MUCHOS A MUCHOS
         public List<LibroAutor>? LibroAutores { get; set; }
     }
 }

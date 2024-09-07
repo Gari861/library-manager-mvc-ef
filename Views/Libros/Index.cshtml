@@ -55,6 +55,14 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Idioma.Tipo)
                 </td>
+                <td> 
+                    @* Recorremos modelo libroautor y mostramos el nombre en rel muchos a muchos *@
+                    @foreach (var libroAutor in Model.LibrosAutores)
+                    {
+                        @libroAutor.Autor.Nombre
+                        <br />
+                    }
+                </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.IdLibro">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.IdLibro">Details</a> |

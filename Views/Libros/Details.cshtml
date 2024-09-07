@@ -48,6 +48,17 @@
         </dd>
     </dl>
 </div>
+
+<div>
+    <h4>Autores</h4>
+    <hr />
+    <ul>
+        @foreach (var libroAutor in Model.LibroAutores) // Asegúrate de que 'Model' esté definido como 'Libro' y tenga la propiedad 'LibroAutores'
+        {
+            <li>@libroAutor.Autor.Nombre</li>
+        }
+    </ul>
+</div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.IdLibro">Edit</a> |
     <a asp-action="Index">Back to List</a>
