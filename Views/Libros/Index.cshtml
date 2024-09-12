@@ -30,7 +30,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Idioma)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.LibrosAutores)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -55,12 +57,13 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Idioma.Tipo)
                 </td>
-                <td> 
+                <td>
                     @* Recorremos modelo libroautor y mostramos el nombre en rel muchos a muchos *@
-                    @foreach (var libroAutor in Model.LibrosAutores)
+                    @foreach (var libroAutor in item.LibrosAutores)
                     {
-                        @libroAutor.Autor.Nombre
-                        <br />
+                        <p>-
+                        @(libroAutor.Autor.Nombre + " " + libroAutor.Autor.Apellido)
+                        </p>
                     }
                 </td>
                 <td>

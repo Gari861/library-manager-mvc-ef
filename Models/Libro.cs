@@ -54,6 +54,7 @@ namespace WebAppLibros.Models
 
         //Relación MUCHOS A MUCHOS
         public List<LibroCategoria>? LibrosCategorias { get; set; }
-        public  List<LibroAutor>? LibrosAutores { get; set; }
+        [Display(Name = "Autores")]
+        public List<LibroAutor>? LibrosAutores { get; set; }
     }
 }

@@ -11,44 +11,61 @@
     <h4>Libro</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Titulo)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Titulo)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CantidadCopias)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CantidadCopias)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CantidadPags)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CantidadPags)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CalificacionPromedio)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.CalificacionPromedio)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Estado)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Estado.Condición)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Idioma)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Idioma.Tipo)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LibrosAutores)
+        </dt>
+        <dd class="col-sm-10">
+            @* recorre la lista de libro autor, accede a autor y muestra los valores *@
+            @if (Model.LibrosAutores != null)
+            {
+                @foreach (var libroautor in Model.LibrosAutores)
+                {
+                    @(libroautor.Autor.Nombre + " " + libroautor.Autor.Apellido);
+                    <br />
+                }
+            }
+        </dd>
     </dl>
-    
+
+
+    </dl>
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdLibro" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

@@ -44,8 +44,9 @@ namespace WebAppLibros.Controllers
             var libro = await _context.Libros
                 .Include(l => l.Estado)
                 .Include(l => l.Idioma)
-        .Include(l => l.LibrosAutores).ThenInclude(la=> la.Autor)
+        .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
         .FirstOrDefaultAsync(l => l.IdLibro == id);
+
             if (libro == null)
             {
                 return NotFound();
@@ -120,6 +121,8 @@ namespace WebAppLibros.Controllers
             }
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "Condición", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo", libro.IdIdioma);
+            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
+
             return View(libro);
         }
 
@@ -128,7 +131,8 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,CalificacionPromedio,IdEstado,IdIdioma")] Libro libro)
+        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,CalificacionPromedio,IdEstado,IdIdioma")] Libro libro, 
+            List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
         {
             if (id != libro.IdLibro)
             {
@@ -139,8 +143,27 @@ namespace WebAppLibros.Controllers
             {
                 try
                 {
-                    _context.Update(libro);
+                    _context.Update(libro); //actualiza libro pero no, libroautor
                     await _context.SaveChangesAsync();
+                    // Elimina las relaciones antiguas en la tabla intermedia LibroAutor
+                    var autoresAntiguos = _context.LibrosAutores.Where(la => la.IdLibro == libro.IdLibro);
+                    _context.LibrosAutores.RemoveRange(autoresAntiguos);
+                    await _context.SaveChangesAsync();
+
+                    // Agrega las nuevas relaciones en la tabla intermedia LibroAutor
+                    if (autoresSeleccionados != null && autoresSeleccionados.Count > 0)
+                    {
+                        foreach (var IdAuto in autoresSeleccionados)
+                        {
+                            var libroAutor = new LibroAutor
+                            {
+                                IdLibro = libro.IdLibro,
+                                IdAutor = IdAuto
+                            };
+                            _context.LibrosAutores.Add(libroAutor);
+                        }
+                        await _context.SaveChangesAsync();
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -155,8 +178,10 @@ namespace WebAppLibros.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            // Si el modelo no es válido, vuelve a cargar las listas desplegables
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
+            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
             return View(libro);
         }
 
@@ -171,6 +196,7 @@ namespace WebAppLibros.Controllers
             var libro = await _context.Libros
                 .Include(l => l.Estado)
                 .Include(l => l.Idioma)
+                .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
                 .FirstOrDefaultAsync(m => m.IdLibro == id);
             if (libro == null)
             {
