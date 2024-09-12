@@ -44,6 +44,18 @@
                 <span asp-validation-for="IdIdioma" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label>Seleccionar autores</label>
+                @* Crea una casilla de verificación para cada autor *@
+                @foreach (var autor in ViewBag.Autores)
+                {
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="@autor.Value" name="autoresSeleccionados[]" id="autor_@autor.Value">
+                        <label class="form-check-label" for="autor_@autor.Value">@autor.Text</label>
+                        @* Muestra un check al lado de cada autor y lo envía al controlador mediante su id *@
+                    </div>
+                }
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -55,5 +67,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

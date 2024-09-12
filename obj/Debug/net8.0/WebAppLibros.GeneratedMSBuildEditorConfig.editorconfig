@@ -114,46 +114,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosCategorias/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosCategorias/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosCategorias/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosCategorias/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosCategorias/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
