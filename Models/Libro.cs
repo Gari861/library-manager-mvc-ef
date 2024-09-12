@@ -44,6 +44,7 @@ namespace WebAppLibros.Models
         public Calificacion? Calificacion { get; set; }
 
         //Relación MUCHOS A MUCHOS
+        [Display(Name = "Categorías")]
         public List<LibroCategoria>? LibrosCategorias { get; set; }
         [Display(Name = "Autores")]
         public List<LibroAutor>? LibrosAutores { get; set; }
