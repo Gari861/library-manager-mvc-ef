@@ -29,12 +29,6 @@
             @Html.DisplayFor(model => model.CantidadPags)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CalificacionPromedio)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CalificacionPromedio)
-        </dd>
-        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Estado)
         </dt>
         <dd class="col-sm-10">
@@ -45,6 +39,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Idioma.Tipo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calificacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calificacion.NumCalificacion)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.LibrosAutores)

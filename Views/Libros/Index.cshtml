@@ -22,13 +22,12 @@
                 @Html.DisplayNameFor(model => model.CantidadPags)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CalificacionPromedio)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Estado)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Idioma)
+            </th>            <th>
+                @Html.DisplayNameFor(model => model.Calificacion)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LibrosAutores)
@@ -49,13 +48,13 @@
                     @Html.DisplayFor(modelItem => item.CantidadPags)
                 </td>
                 <td>
-                    @item.CalificacionPromedio.ToString("0.0")
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Estado.Condición)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Idioma.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calificacion.NumCalificacion)
                 </td>
                 <td>
                     @* Recorremos modelo libroautor y mostramos el nombre en rel muchos a muchos *@

@@ -5,6 +5,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebAppLibros.Models;
 
 namespace WebAppLibros.Models
 {
@@ -22,7 +23,6 @@ namespace WebAppLibros.Models
 
         }
 
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Relación UNO A UNO 
@@ -35,13 +35,17 @@ namespace WebAppLibros.Models
             modelBuilder.Entity<Libro>()
                 .HasOne(l => l.Idioma)
                 .WithMany(g => g.Libros)
-                .HasForeignKey(l => l.IdIdioma);       
-            
+                .HasForeignKey(l => l.IdIdioma);
+
             modelBuilder.Entity<Libro>()
                 .HasOne(l => l.Estado)
                 .WithMany(g => g.Libros)
                 .HasForeignKey(l => l.IdEstado);
 
+            modelBuilder.Entity<Libro>()
+                .HasOne(l => l.Calificacion)
+                .WithMany(g => g.Libros)
+                .HasForeignKey(l => l.IdCalificacion);
 
             // Relación MUCHOS A MUCHOS
             modelBuilder.Entity<LibroCategoria>()
@@ -56,7 +60,7 @@ namespace WebAppLibros.Models
                 .HasOne(lc => lc.Categoria)
                 .WithMany(c => c.LibrosCategorias)
                 .HasForeignKey(lc => lc.IdCategoria);
-            
+
             modelBuilder.Entity<LibroAutor>()
                 .HasKey(lc => new { lc.IdLibro, lc.IdAutor });
 
@@ -75,10 +79,12 @@ namespace WebAppLibros.Models
         public DbSet<UbicacionBiblioteca> UbicacionesBiblioteca { get; set; }
         public DbSet<Estado> Estados { get; set; }
         public DbSet<Idioma> Idiomas { get; set; }
+        public DbSet<Calificacion> Calificaciones { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<LibroCategoria> LibrosCategorias { get; set; }
         public DbSet<Autor> Autores { get; set; }
         public DbSet<LibroAutor> LibrosAutores { get; set; }
+        public DbSet<LibroCategoria> LibrosCategorias { get; set; }
     }
-
 }
+
+

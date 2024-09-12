@@ -42,6 +42,22 @@ namespace WebAppLibros.Migrations
                     b.ToTable("Autores");
                 });
 
+            modelBuilder.Entity("WebAppLibros.Models.Calificacion", b =>
+                {
+                    b.Property<int>("IdCalificacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCalificacion"));
+
+                    b.Property<int>("NumCalificacion")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdCalificacion");
+
+                    b.ToTable("Calificaciones");
+                });
+
             modelBuilder.Entity("WebAppLibros.Models.Categoria", b =>
                 {
                     b.Property<int>("IdCategoria")
@@ -101,13 +117,13 @@ namespace WebAppLibros.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdLibro"));
 
-                    b.Property<double>("CalificacionPromedio")
-                        .HasColumnType("float");
-
                     b.Property<int>("CantidadCopias")
                         .HasColumnType("int");
 
                     b.Property<int>("CantidadPags")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdCalificacion")
                         .HasColumnType("int");
 
                     b.Property<int>("IdEstado")
@@ -121,6 +137,8 @@ namespace WebAppLibros.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdLibro");
+
+                    b.HasIndex("IdCalificacion");
 
                     b.HasIndex("IdEstado");
 
@@ -187,6 +205,12 @@ namespace WebAppLibros.Migrations
 
             modelBuilder.Entity("WebAppLibros.Models.Libro", b =>
                 {
+                    b.HasOne("WebAppLibros.Models.Calificacion", "Calificacion")
+                        .WithMany("Libros")
+                        .HasForeignKey("IdCalificacion")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("WebAppLibros.Models.Estado", "Estado")
                         .WithMany("Libros")
                         .HasForeignKey("IdEstado")
@@ -198,6 +222,8 @@ namespace WebAppLibros.Migrations
                         .HasForeignKey("IdIdioma")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Calificacion");
 
                     b.Navigation("Estado");
 
@@ -256,6 +282,11 @@ namespace WebAppLibros.Migrations
             modelBuilder.Entity("WebAppLibros.Models.Autor", b =>
                 {
                     b.Navigation("LibroAutores");
+                });
+
+            modelBuilder.Entity("WebAppLibros.Models.Calificacion", b =>
+                {
+                    b.Navigation("Libros");
                 });
 
             modelBuilder.Entity("WebAppLibros.Models.Categoria", b =>
