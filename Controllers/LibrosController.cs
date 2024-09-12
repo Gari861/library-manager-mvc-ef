@@ -45,7 +45,7 @@ namespace WebAppLibros.Controllers
                 .Include(l => l.Estado)
                 .Include(l => l.Idioma)
                 .Include(l => l.Calificacion)
-        .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
+                .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
         .FirstOrDefaultAsync(l => l.IdLibro == id);
 
             if (libro == null)
@@ -61,11 +61,9 @@ namespace WebAppLibros.Controllers
         {
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "Condición"); //id, info
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo");
-            ViewData["IdCalificacion"] = new SelectList(_context.Idiomas, "IdCalificacion", "NumCalificacion");
+            ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion");
 
-            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
-            //devuelve la lista de autores
-            //crea un select list con la list autores, que guarda el id y muestra el nombre
+            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");            //crea un select list con la list autores, que guarda el id y muestra el nombre
 
             return View();
         }
@@ -75,8 +73,7 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
-            List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
+        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro, List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +99,7 @@ namespace WebAppLibros.Controllers
             // En caso de error, cargar nuevamente los estados, idiomas y autores
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
-            ViewData["IdCalificacion"] = new SelectList(_context.Idiomas, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
+            ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
 
             // Volver a cargar la lista de autores
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
@@ -124,7 +121,7 @@ namespace WebAppLibros.Controllers
             }
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "Condición", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo", libro.IdIdioma);
-            ViewData["IdCalificacion"] = new SelectList(_context.Idiomas, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
+            ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
 
             return View(libro);
@@ -135,7 +132,7 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,CalificacionPromedio,IdEstado,IdIdioma")] Libro libro,
+        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
             List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
         {
             if (id != libro.IdLibro)
@@ -185,7 +182,7 @@ namespace WebAppLibros.Controllers
             // Si el modelo no es válido, vuelve a cargar las listas desplegables
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
-            ViewData["IdCalificacion"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
+            ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "IdCalificacion", libro.IdCalificacion);
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
             return View(libro);
         }
