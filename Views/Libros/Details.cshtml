@@ -60,6 +60,19 @@
                 }
             }
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LibrosCategorias)
+        </dt>
+        <dd class="col-sm-10">
+            @if (Model.LibrosCategorias != null)
+            {
+                @foreach (var librocategoria in Model.LibrosCategorias)
+                {
+                    @(librocategoria.Categoria.Tipo);
+                    <br />
+                }
+            }
+        </dd>
     </dl>
 </div>
 <div>

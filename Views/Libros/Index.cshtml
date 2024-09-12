@@ -32,6 +32,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.LibrosAutores)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LibrosCategorias)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -62,6 +65,14 @@
                     {
                         <p>-
                         @(libroAutor.Autor.Nombre + " " + libroAutor.Autor.Apellido)
+                        </p>
+                    }
+                </td>
+                <td>
+                    @foreach (var libroCategoria in item.LibrosCategorias)
+                    {
+                        <p>-
+                            @(libroCategoria.Categoria.Tipo)
                         </p>
                     }
                 </td>

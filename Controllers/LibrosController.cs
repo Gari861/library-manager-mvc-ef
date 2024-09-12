@@ -27,7 +27,7 @@ namespace WebAppLibros.Controllers
         // GET: Libros
         public async Task<IActionResult> Index()
         {
-            var appDBcontext = _context.Libros.Include(l => l.Estado).Include(l => l.Idioma).Include(l => l.Calificacion).Include(l => l.LibrosAutores).ThenInclude(la => la.Autor);
+            var appDBcontext = _context.Libros.Include(l => l.Estado).Include(l => l.Idioma).Include(l => l.Calificacion).Include(l => l.LibrosAutores).ThenInclude(la => la.Autor).Include(l => l.LibrosCategorias).ThenInclude(la => la.Categoria);
             //Agregando theninclude también se carga la información del
             //autor, no hay otra forma de hacerlo
             return View(await appDBcontext.ToListAsync());
@@ -46,7 +46,8 @@ namespace WebAppLibros.Controllers
                 .Include(l => l.Idioma)
                 .Include(l => l.Calificacion)
                 .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
-        .FirstOrDefaultAsync(l => l.IdLibro == id);
+                .Include(l => l.LibrosCategorias).ThenInclude(la => la.Categoria)
+                .FirstOrDefaultAsync(l => l.IdLibro == id);
 
             if (libro == null)
             {
@@ -63,7 +64,8 @@ namespace WebAppLibros.Controllers
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo");
             ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion");
 
-            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");            //crea un select list con la list autores, que guarda el id y muestra el nombre
+            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
+            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategoria", "Tipo");
 
             return View();
         }
@@ -73,7 +75,8 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro, List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
+        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
+            List<int> autoresSeleccionados, List<int> categoriasSeleccionadas)
         {
             if (ModelState.IsValid)
             {
@@ -94,6 +97,19 @@ namespace WebAppLibros.Controllers
                     }
                     await _context.SaveChangesAsync();
                 }
+                if (categoriasSeleccionadas != null && categoriasSeleccionadas.Count > 0)
+                {
+                    foreach (var idCategoria in categoriasSeleccionadas)
+                    {
+                        var libroCategoria = new LibroCategoria
+                        {
+                            IdLibro = libro.IdLibro,
+                            IdCategoria = idCategoria
+                        };
+                        _context.LibrosCategorias.Add(libroCategoria);
+                    }
+                    await _context.SaveChangesAsync();
+                }
                 return RedirectToAction(nameof(Index));
             }
             // En caso de error, cargar nuevamente los estados, idiomas y autores
@@ -103,6 +119,7 @@ namespace WebAppLibros.Controllers
 
             // Volver a cargar la lista de autores
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
+            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategorias", "Tipo");
             return View(libro);
         }
 
@@ -123,6 +140,7 @@ namespace WebAppLibros.Controllers
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo", libro.IdIdioma);
             ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
+            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategoria", "Tipo");
 
             return View(libro);
         }
@@ -133,7 +151,7 @@ namespace WebAppLibros.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
-            List<int> autoresSeleccionados)//se agrega como parámetro para lista de autores
+            List<int> autoresSeleccionados, List<int> categoriasSeleccionadas)
         {
             if (id != libro.IdLibro)
             {
@@ -146,6 +164,7 @@ namespace WebAppLibros.Controllers
                 {
                     _context.Update(libro); //actualiza libro pero no, libroautor
                     await _context.SaveChangesAsync();
+
                     // Elimina las relaciones antiguas en la tabla intermedia LibroAutor
                     var autoresAntiguos = _context.LibrosAutores.Where(la => la.IdLibro == libro.IdLibro);
                     _context.LibrosAutores.RemoveRange(autoresAntiguos);
@@ -162,6 +181,26 @@ namespace WebAppLibros.Controllers
                                 IdAutor = IdAuto
                             };
                             _context.LibrosAutores.Add(libroAutor);
+                        }
+                        await _context.SaveChangesAsync();
+                    }
+
+                    // Elimina las relaciones antiguas en la tabla intermedia LibroCategoria
+                    var categoriasAntiguas = _context.LibrosCategorias.Where(la => la.IdLibro == libro.IdLibro);
+                    _context.LibrosCategorias.RemoveRange(categoriasAntiguas);
+                    await _context.SaveChangesAsync();
+
+                    // Agrega las nuevas relaciones en la tabla intermedia LibroCategoría
+                    if (categoriasSeleccionadas != null && categoriasSeleccionadas.Count > 0)
+                    {
+                        foreach (var IdCategori in categoriasSeleccionadas)
+                        {
+                            var librocategoria = new LibroCategoria
+                            {
+                                IdLibro = libro.IdLibro,
+                                IdCategoria = IdCategori
+                            };
+                            _context.LibrosCategorias.Add(librocategoria);
                         }
                         await _context.SaveChangesAsync();
                     }
@@ -184,6 +223,7 @@ namespace WebAppLibros.Controllers
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);
             ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "IdCalificacion", libro.IdCalificacion);
             ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
+            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategoria", "Tipo");
             return View(libro);
         }
 
@@ -198,7 +238,9 @@ namespace WebAppLibros.Controllers
             var libro = await _context.Libros
                 .Include(l => l.Estado)
                 .Include(l => l.Idioma)
+                .Include(l => l.Calificacion)
                 .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
+                .Include(l => l.LibrosCategorias).ThenInclude(la => la.Categoria)
                 .FirstOrDefaultAsync(m => m.IdLibro == id);
             if (libro == null)
             {
