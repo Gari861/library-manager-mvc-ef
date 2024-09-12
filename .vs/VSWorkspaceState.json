@@ -6,6 +6,6 @@
     "\\Views",
     "\\Views\\Libros"
   ],
-  "SelectedNode": "\\Views\\Libros\\Details.cshtml",
+  "SelectedNode": "\\Controllers\\LibrosAutoresController.cs",
   "PreviewInSolutionExplorer": false
 }

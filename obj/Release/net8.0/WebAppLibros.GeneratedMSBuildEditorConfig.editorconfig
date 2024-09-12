@@ -17,179 +17,199 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAppLibros
 build_property.RootNamespace = WebAppLibros
-build_property.ProjectDir = C:\Users\User\Desktop\ProbndoCRUD\MVC.EF.CRUD\
+build_property.ProjectDir = C:\Users\User\Desktop\MVC.EF.CRUD\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\ProbndoCRUD\MVC.EF.CRUD
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\MVC.EF.CRUD
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Autores/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Autores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Autores/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Autores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Autores/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Autores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Autores/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Autores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Autores/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Autores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Calificaciones/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Calificaciones/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWZpY2FjaW9uZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Calificaciones/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Calificaciones/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWZpY2FjaW9uZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Calificaciones/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Calificaciones/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWZpY2FjaW9uZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Calificaciones/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Calificaciones/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWZpY2FjaW9uZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Calificaciones/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Calificaciones/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWZpY2FjaW9uZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Categorias/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Categorias/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Categorias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Categorias/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Categorias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Categorias/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Categorias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Categorias/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Categorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Estados/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Estados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Estados/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Estados/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Estados/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Estados/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Estados/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Estados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Estados/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Estados/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Home/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Home/Privacy.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Idiomas/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Idiomas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Idiomas/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Idiomas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Idiomas/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Idiomas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Idiomas/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Idiomas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Idiomas/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Idiomas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRpb21hc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Libros/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/LibrosAutores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zQXV0b3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Libros/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Libros/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Libros/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Libros/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Libros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Shared/Error.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Create.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNCaWJsaW90ZWNhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Delete.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNCaWJsaW90ZWNhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Details.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNCaWJsaW90ZWNhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Edit.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNCaWJsaW90ZWNhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Index.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/UbicacionesBiblioteca/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNCaWJsaW90ZWNhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/_ViewImports.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/_ViewStart.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/ProbndoCRUD/MVC.EF.CRUD/Views/Shared/_Layout.cshtml]
+[C:/Users/User/Desktop/MVC.EF.CRUD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sbimbxqu6j

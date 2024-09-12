@@ -39,17 +39,17 @@
                 <label asp-for="IdCalificacion" class="control-label"></label>
                 <select asp-for="IdCalificacion" class="form-control" asp-items="ViewBag.IdCalificacion"></select>
             </div>
-
             <div class="form-group">
-                <label>Seleccionar autores</label>
-                @* Crea una casilla de verificación para cada autor *@
-                @foreach (var autor in ViewBag.Autores)
+                <label for="autoresSeleccionados">Seleccionar autores</label>
+                @if (ViewBag.Autores != null)
                 {
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="@autor.Value" name="autoresSeleccionados[]" id="autor_@autor.Value">
-                        <label class="form-check-label" for="autor_@autor.Value">@autor.Text</label>
-                        @* Muestra un check al lado de cada autor y lo envía al controlador mediante su id *@
-                    </div>
+                    @foreach (var autor in ViewBag.Autores)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="@autor.Value" name="autoresSeleccionados[]" id="autor_@autor.Value">
+                            <label class="form-check-label" for="autor_@autor.Value">@autor.Text</label>
+                        </div>
+                    }
                 }
             </div>
             <div class="form-group">
