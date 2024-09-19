@@ -19,6 +19,9 @@ namespace WebAppLibros.Models
         [Display(Name = "Cantidad páginas")]
         public int CantidadPags { get; set; }
 
+        [Display(Name = "Foto")]
+        public string? Foto { get; set; }
+
         //Relacion UNO a UNO
         [Display(Name = "Ubicación")]
         public UbicacionBiblioteca? UbicacionBiblioteca { get; set; }

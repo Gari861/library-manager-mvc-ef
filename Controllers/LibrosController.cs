@@ -12,11 +12,13 @@ namespace WebAppLibros.Controllers
     public class LibrosController : Controller
     {
         private readonly AppDBcontext _context;
+        private readonly IWebHostEnvironment _env;
 
         // inyección de dependencia SQL
-        public LibrosController(AppDBcontext context)
+        public LibrosController(AppDBcontext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         //public LibrosController()
@@ -75,11 +77,33 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
+        public async Task<IActionResult> Create([Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion,Foto")] Libro libro,
             List<int> autoresSeleccionados, List<int> categoriasSeleccionadas)
         {
             if (ModelState.IsValid)
             {
+                // Manejo del archivo de foto
+                var archivos = HttpContext.Request.Form.Files;
+                if (archivos != null && archivos.Count > 0)
+                {
+                    var archivoFoto = archivos[0];
+                    if (archivoFoto.Length > 0)
+                    {
+                        var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
+                        var extArch = Path.GetExtension(archivoFoto.FileName);
+                        // Generar un nombre único para el archivo
+                        var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
+
+                        // Guardar el archivo en memoria
+                        using (var filestream = new FileStream(Path.Combine(rutaDestino, archivoDestino), FileMode.Create))
+                        {
+                            archivoFoto.CopyTo(filestream);
+                            libro.Foto = archivoDestino; // Aquí asumes que la clase Libro tiene una propiedad Foto
+                        }
+                    }
+                }
+                
+                // Guardar el libro en la base de datos
                 _context.Add(libro);
                 await _context.SaveChangesAsync();
 
@@ -97,6 +121,8 @@ namespace WebAppLibros.Controllers
                     }
                     await _context.SaveChangesAsync();
                 }
+
+                // Relacionar las categorías seleccionadas con el libro
                 if (categoriasSeleccionadas != null && categoriasSeleccionadas.Count > 0)
                 {
                     foreach (var idCategoria in categoriasSeleccionadas)
@@ -150,7 +176,7 @@ namespace WebAppLibros.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion")] Libro libro,
+        public async Task<IActionResult> Edit(int id, [Bind("IdLibro,Titulo,CantidadCopias,CantidadPags,IdEstado,IdIdioma,IdCalificacion,Foto")] Libro libro,
             List<int> autoresSeleccionados, List<int> categoriasSeleccionadas)
         {
             if (id != libro.IdLibro)
@@ -162,45 +188,78 @@ namespace WebAppLibros.Controllers
             {
                 try
                 {
-                    _context.Update(libro); //actualiza libro pero no, libroautor
+                    // Manejo de archivos (fotos)
+                    var archivos = HttpContext.Request.Form.Files;
+                    if (archivos != null && archivos.Count > 0)
+                    {
+                        var archivoFoto = archivos[0];
+                        if (archivoFoto.Length > 0)
+                        {
+                            var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
+                            var extArch = Path.GetExtension(archivoFoto.FileName);
+                            var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
+
+                            // Crear el archivo en memoria
+                            using (var filestream = new FileStream(Path.Combine(rutaDestino, archivoDestino), FileMode.Create))
+                            {
+                                archivoFoto.CopyTo(filestream);
+
+                                // Si existe una foto anterior, se elimina
+                                if (!string.IsNullOrEmpty(libro.Foto))
+                                {
+                                    string fotoAnterior = Path.Combine(rutaDestino, libro.Foto);
+                                    if (System.IO.File.Exists(fotoAnterior))
+                                    {
+                                        System.IO.File.Delete(fotoAnterior);
+                                    }
+                                }
+
+                                // Asignar la nueva foto
+                                libro.Foto = archivoDestino;
+                            }
+                        }
+                    }
+
+                    // Actualizar libro en la base de datos
+                    _context.Update(libro);
                     await _context.SaveChangesAsync();
 
-                    // Elimina las relaciones antiguas en la tabla intermedia LibroAutor
+                    // Eliminar relaciones antiguas en LibroAutor
                     var autoresAntiguos = _context.LibrosAutores.Where(la => la.IdLibro == libro.IdLibro);
                     _context.LibrosAutores.RemoveRange(autoresAntiguos);
                     await _context.SaveChangesAsync();
 
-                    // Agrega las nuevas relaciones en la tabla intermedia LibroAutor
+                    // Agregar nuevas relaciones en LibroAutor
                     if (autoresSeleccionados != null && autoresSeleccionados.Count > 0)
                     {
-                        foreach (var IdAuto in autoresSeleccionados)
+                        foreach (var IdAutor in autoresSeleccionados)
                         {
                             var libroAutor = new LibroAutor
                             {
                                 IdLibro = libro.IdLibro,
-                                IdAutor = IdAuto
+                                IdAutor = IdAutor
                             };
                             _context.LibrosAutores.Add(libroAutor);
                         }
                         await _context.SaveChangesAsync();
                     }
 
-                    // Elimina las relaciones antiguas en la tabla intermedia LibroCategoria
-                    var categoriasAntiguas = _context.LibrosCategorias.Where(la => la.IdLibro == libro.IdLibro);
+                    // Eliminar relaciones antiguas en LibroCategoria
+                    var categoriasAntiguas = _context.LibrosCategorias.Where(lc => lc.IdLibro == libro.IdLibro);
                     _context.LibrosCategorias.RemoveRange(categoriasAntiguas);
                     await _context.SaveChangesAsync();
 
-                    // Agrega las nuevas relaciones en la tabla intermedia LibroCategoría
+                    // Agregar nuevas relaciones en LibroCategoria
                     if (categoriasSeleccionadas != null && categoriasSeleccionadas.Count > 0)
                     {
-                        foreach (var IdCategori in categoriasSeleccionadas)
+                        foreach (var IdCategoria in categoriasSeleccionadas)
                         {
-                            var librocategoria = new LibroCategoria
+                            var libroCategoria = new LibroCategoria
                             {
                                 IdLibro = libro.IdLibro,
-                                IdCategoria = IdCategori
+                                IdCategoria = IdCategoria
                             };
-                            _context.LibrosCategorias.Add(librocategoria);
+                            _context.LibrosCategorias.Add(libroCategoria);
                         }
                         await _context.SaveChangesAsync();
                     }
@@ -216,8 +275,10 @@ namespace WebAppLibros.Controllers
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             // Si el modelo no es válido, vuelve a cargar las listas desplegables
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "IdEstado", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "IdIdioma", libro.IdIdioma);

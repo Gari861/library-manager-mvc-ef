@@ -75,6 +75,7 @@ namespace WebAppLibros.Models
                 .HasForeignKey(lc => lc.IdAutor);
         }
 
+        //Tablas
         public DbSet<Libro> Libros { get; set; }
         public DbSet<UbicacionBiblioteca> UbicacionesBiblioteca { get; set; }
         public DbSet<Estado> Estados { get; set; }
