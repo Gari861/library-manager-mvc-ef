@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\WebAppLibros.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png",
+      "PackagePath": "staticwebassets\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\Fotografias\\481637d0a0a141fd8baa58ba81cf35ac.jpg",
+      "PackagePath": "staticwebassets\\Fotografias\\481637d0a0a141fd8baa58ba81cf35ac.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
       "PackagePath": "staticwebassets\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg"
     },

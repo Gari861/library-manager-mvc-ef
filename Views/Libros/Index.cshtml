@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table" style="text-align: center;">
     <thead>
         <tr>
             <th>
@@ -37,13 +37,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.LibrosCategorias)
             </th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td style="text-transform: uppercase;">
                     @Html.DisplayFor(modelItem => item.Titulo)
                 </td>
                 <td>
@@ -65,7 +66,7 @@
                     @*   mientras no tenga foto, no muestro nada *@
                     @if (!string.IsNullOrEmpty(item.Foto))
                     {
-                        <img src="~/fotografias/@item.Foto" class="rounded-circle" style="max-width:60px" />
+                        <img src="~/fotografias/@item.Foto" class="rounded-circle" style="max-width:70px" />
                     }
                 </td>
 

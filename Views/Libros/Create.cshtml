@@ -12,40 +12,40 @@
     <div class="col-md-4">
         <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Titulo" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="Titulo" class="form-control" />
                 <span asp-validation-for="Titulo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CantidadCopias" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="CantidadCopias" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="CantidadCopias" class="form-control" />
                 <span asp-validation-for="CantidadCopias" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CantidadPags" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="CantidadPags" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="CantidadPags" class="form-control" />
                 <span asp-validation-for="CantidadPags" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="IdEstado" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdEstado" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdEstado" class ="form-control" asp-items="ViewBag.IdEstado"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="IdIdioma" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdIdioma" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdIdioma" class ="form-control" asp-items="ViewBag.IdIdioma"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="IdCalificacion" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdCalificacion" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdCalificacion" class="form-control" asp-items="ViewBag.IdCalificacion"></select>
             </div>
             @* foto *@
-            <div class="form-group">
-                <label asp-for="Foto" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Foto" style="font-weight: bold;" class="control-label"></label>
                 <input type="file" id="imagen" name="imagen" class="form-control" accept="image/jpg" />
             </div>
-            <div class="form-group">
-                <label for="autoresSeleccionados">Seleccionar autores</label>
+            <div class="form-group mb-2">
+                <label for="autoresSeleccionados" style="font-weight: bold;">Seleccionar autores</label>
                 @if (ViewBag.Autores != null)
                 {
                     @foreach (var autor in ViewBag.Autores)
@@ -57,8 +57,8 @@
                     }
                 }
             </div>
-            <div class="form-group">
-                <label for="autoresSeleccionados">Seleccionar categorías</label>
+            <div class="form-group mb-2">
+                <label for="autoresSeleccionados" style="font-weight: bold;">Seleccionar categorías</label>
                 @if (ViewBag.Categorias != null)
                 {
                     @foreach (var categoria in ViewBag.Categorias)
@@ -70,7 +70,7 @@
                     }
                 }
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

@@ -13,40 +13,40 @@
         <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdLibro" />
-            <div class="form-group">
-                <label asp-for="Titulo" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Titulo" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="Titulo" class="form-control" />
                 <span asp-validation-for="Titulo" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CantidadCopias" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="CantidadCopias" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="CantidadCopias" class="form-control" />
                 <span asp-validation-for="CantidadCopias" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CantidadPags" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="CantidadPags" style="font-weight: bold;" class="control-label"></label>
                 <input asp-for="CantidadPags" class="form-control" />
                 <span asp-validation-for="CantidadPags" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="IdEstado" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdEstado" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdEstado" class="form-control" asp-items="ViewBag.IdEstado"></select>
                 <span asp-validation-for="IdEstado" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="IdIdioma" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdIdioma" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdIdioma" class="form-control" asp-items="ViewBag.IdIdioma"></select>
                 <span asp-validation-for="IdIdioma" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="IdCalificacion" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="IdCalificacion" style="font-weight: bold;" class="control-label"></label>
                 <select asp-for="IdCalificacion" class="form-control" asp-items="ViewBag.IdCalificacion"></select>
                 <span asp-validation-for="IdCalificacion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Foto" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Foto" style="font-weight: bold;" class="control-label"></label>
                 <br />
-                <!-- Campo oculto para mantener el valor de la foto existente -->
+                <!-- Campo oculto para mantener el string de la foto existente -->
                 <input type="hidden" asp-for="Foto" />
                 <!-- Mostrar la imagen actual si existe -->
                 @if (!string.IsNullOrEmpty(Model.Foto))
@@ -60,7 +60,7 @@
                     </div>
                 }  
                 <!-- Input para subir una nueva imagen -->
-                <label for="imagen" class="control-label">Cargar nueva imagen:</label>
+                <label for="imagen" style="font-weight: bold;" class="control-label">Cargar nueva imagen:</label>
                 <input type="file" id="imagen" name="imagen" class="form-control" accept="image/png, image/jpeg" onchange="hideImage()" />
             </div>
 
@@ -73,31 +73,39 @@
                     }
                 }
             </script>
-
-            <div class="form-group">
-                <label>Seleccionar autores</label>
+            <div class="form-group mb-2">
+                <label style="font-weight: bold;">Seleccionar autores</label>
                 @* Crea una casilla de verificación para cada autor *@
                 @foreach (var autor in ViewBag.Autores)
                 {
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="@autor.Value" name="autoresSeleccionados[]" id="autor_@autor.Value">
+                        <input class="form-check-input" type="checkbox" value="@autor.Value" name="autoresSeleccionados[]" id="autor_@autor.Value"
+                        @if (autor.Selected)
+                        {
+                            @:checked
+                        } />
                         <label class="form-check-label" for="autor_@autor.Value">@autor.Text</label>
-                        @* Muestra un check al lado de cada autor y lo envía al controlador mediante su id *@
                     </div>
                 }
             </div>
-            <div class="form-group">
-                <label>Seleccionar Categorías</label>
+
+
+            <div class="form-group mb-2">
+                <label style="font-weight: bold;">Seleccionar Categorías</label>
                 @* Crea una casilla de verificación para cada autor *@
                 @foreach (var categoria in ViewBag.Categorias)
                 {
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="@categoria.Value" name="categoriasSeleccionadas[]" id="categoria_@categoria.Value">
+                        <input class="form-check-input" type="checkbox" value="@categoria.Value" name="categoriasSeleccionadas[]" id="categoria_@categoria.Value"
+                        @if (categoria.Selected)
+                        {
+                            @:checked
+                        } />
                         <label class="form-check-label" for="categoria_@categoria.Value">@categoria.Text</label>
                     </div>
                 }
             </div>
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

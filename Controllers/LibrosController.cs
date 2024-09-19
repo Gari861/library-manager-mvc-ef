@@ -157,19 +157,37 @@ namespace WebAppLibros.Controllers
                 return NotFound();
             }
 
-            var libro = await _context.Libros.FindAsync(id);
+            // Obtener el libro con los relacionados
+            var libro = await _context.Libros
+                .Include(l => l.LibrosAutores)
+                .ThenInclude(la => la.Autor)
+                .Include(l=> l.LibrosCategorias)
+                .ThenInclude(la => la.Categoria)
+                .FirstOrDefaultAsync(m => m.IdLibro == id);
+
             if (libro == null)
             {
                 return NotFound();
             }
+
+            // Obtener la lista de seleccionados (relacionados con el libro)
+            var autoresSeleccionados = libro.LibrosAutores.Select(la => la.IdAutor).ToList();
+            var categoriasSeleccionadas = libro.LibrosCategorias.Select(la => la.IdCategoria).ToList();
+
+            // Comportamiento normal
             ViewData["IdEstado"] = new SelectList(_context.Estados, "IdEstado", "Condición", libro.IdEstado);
             ViewData["IdIdioma"] = new SelectList(_context.Idiomas, "IdIdioma", "Tipo", libro.IdIdioma);
             ViewData["IdCalificacion"] = new SelectList(_context.Calificaciones, "IdCalificacion", "NumCalificacion", libro.IdCalificacion);
-            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre");
-            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategoria", "Tipo");
+
+            // Crear la lista de autores con los seleccionados marcados
+            ViewBag.Autores = new MultiSelectList(_context.Autores, "IdAutor", "Nombre", autoresSeleccionados);
+
+            // Crear la lista de categorías con los seleccionados marcados
+            ViewBag.Categorias = new MultiSelectList(_context.Categorias, "IdCategoria", "Tipo", categoriasSeleccionadas);
 
             return View(libro);
         }
+
 
         // POST: Libros/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
