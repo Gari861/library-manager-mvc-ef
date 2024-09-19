@@ -42,7 +42,9 @@
             @* foto *@
             <div class="form-group mb-2">
                 <label asp-for="Foto" style="font-weight: bold;" class="control-label"></label>
-                <input type="file" id="imagen" name="imagen" class="form-control" accept="image/jpg" />
+                <img id="imagen" src="" class="rounded-circle img-thumbnail"
+                     style="max-width: 100px; max-height: 100px; display: none;" asp-append-version="true" />
+                <input type="file" id="seleccionImg" name="imagen" class="form-control" accept="image/jpg"/>
             </div>
             <div class="form-group mb-2">
                 <label for="autoresSeleccionados" style="font-weight: bold;">Seleccionar autores</label>
@@ -84,3 +86,5 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/js//preview.js"></script>

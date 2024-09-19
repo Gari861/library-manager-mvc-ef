@@ -43,36 +43,21 @@
                 <select asp-for="IdCalificacion" class="form-control" asp-items="ViewBag.IdCalificacion"></select>
                 <span asp-validation-for="IdCalificacion" class="text-danger"></span>
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group">
                 <label asp-for="Foto" style="font-weight: bold;" class="control-label"></label>
-                <br />
                 <!-- Campo oculto para mantener el string de la foto existente -->
-                <input type="hidden" asp-for="Foto" />
+                <input type="hidden" asp-for="Foto"/>
                 <!-- Mostrar la imagen actual si existe -->
-                @if (!string.IsNullOrEmpty(Model.Foto))
-                {
-                    <div class="mb-3" id="imgContainer">
-                        <p>Imagen actual:</p>
-                        <img id="imgPreview" src="~/fotografias/@Model.Foto"
-                             class="rounded-circle img-thumbnail"
-                             style="max-width: 100px;"
-                             alt="Foto del libro" />
-                    </div>
-                }  
+                <div class="mb-3">
+                    <img id="imagen" src="~/fotografias/@Model.Foto"
+                         class="rounded-circle img-thumbnail"
+                         style="max-width: 100px; max-height: 100px; display: none;"
+                         asp-append-version="true" />
+                </div>
                 <!-- Input para subir una nueva imagen -->
                 <label for="imagen" style="font-weight: bold;" class="control-label">Cargar nueva imagen:</label>
-                <input type="file" id="imagen" name="imagen" class="form-control" accept="image/png, image/jpeg" onchange="hideImage()" />
+                <input type="file" id="seleccionImg" name="imagen" class="form-control" />
             </div>
-
-            <!-- JavaScript para ocultar la imagen cuando se selecciona un archivo -->
-            <script>
-                function hideImage() {
-                    var imgContainer = document.getElementById('imgContainer');
-                    if (imgContainer) {
-                        imgContainer.style.display = 'none';  // Oculta el contenedor de la imagen actual
-                    }
-                }
-            </script>
             <div class="form-group mb-2">
                 <label style="font-weight: bold;">Seleccionar autores</label>
                 @* Crea una casilla de verificación para cada autor *@
@@ -120,4 +105,6 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="~/js//preview.js"></script>
 }
