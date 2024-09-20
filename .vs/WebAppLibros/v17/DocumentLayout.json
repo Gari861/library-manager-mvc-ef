@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\wwwroot\\js\\preview.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:wwwroot\\js\\preview.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:views\\libros\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc.ef.crud\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,65 +46,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "preview.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\preview.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\preview.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\preview.js",
-              "RelativeToolTip": "wwwroot\\js\\preview.js",
-              "ViewState": "AgIAABcAAAAAAAAAAAAUwCQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-19T18:59:37.355Z",
+              "DocumentIndex": 2,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Models\\Libro.cs",
+              "RelativeToolTip": "Models\\Libro.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T18:23:44.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Libros\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Libros\\Edit.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T18:53:58.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Libros\\Create.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Create.cshtml",
               "RelativeToolTip": "Views\\Libros\\Create.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-19T10:34:00.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Libros\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Views\\Libros\\Index.cshtml",
-              "RelativeToolTip": "Views\\Libros\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T11:09:25.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LibrosController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Controllers\\LibrosController.cs",
               "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\Controllers\\LibrosController.cs",
               "RelativeToolTip": "Controllers\\LibrosController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAADgv6YAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8BAAAAAAAAAAAUwKIBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T20:42:17.529Z",
               "EditorCaption": ""

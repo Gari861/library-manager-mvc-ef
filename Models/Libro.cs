@@ -17,6 +17,7 @@ namespace WebAppLibros.Models
         public int CantidadCopias { get; set; }
 
         [Display(Name = "Cantidad páginas")]
+        [Required(ErrorMessage = "La cantidad de páginas es obligatoria")]
         public int CantidadPags { get; set; }
 
         [Display(Name = "Foto")]
@@ -28,19 +29,16 @@ namespace WebAppLibros.Models
         //LA CLAVE FORÁNEA ESTA EN LA CLASE UBICACIÓN
 
         //Relación UNO A MUCHOS
-        [Required(ErrorMessage = "El Estado es obligatorio")]
         [Display(Name = "Estado")]
         public int IdEstado { get; set; }
         [ForeignKey(nameof(IdEstado))]
         public Estado? Estado { get; set; }
 
-        [Display(Name = "Idioma")]
         [Required(ErrorMessage = "El Idioma es obligatorio")]
         public int IdIdioma { get; set; }
         [ForeignKey(nameof(IdIdioma))]
         public Idioma? Idioma { get; set; }
 
-        [Required(ErrorMessage = "La Calificación es obligatoria")]
         [Display(Name = "Calificación")]
         public int IdCalificacion { get; set; }
         [ForeignKey(nameof(IdCalificacion))]

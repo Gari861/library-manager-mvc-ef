@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\fotografias\" />
+    <Folder Include="wwwroot\importaciones\" />
   </ItemGroup>
 
 </Project>

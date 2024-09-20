@@ -4,8 +4,10 @@
     "\\Controllers",
     "\\Models",
     "\\Views",
-    "\\Views\\Libros"
+    "\\Views\\Libros",
+    "\\wwwroot",
+    "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\Views\\Libros\\Index.cshtml",
+  "SelectedNode": "\\Controllers\\LibrosController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -29,11 +29,11 @@
             </div>
             <div class="form-group mb-2">
                 <label asp-for="IdEstado" style="font-weight: bold;" class="control-label"></label>
-                <select asp-for="IdEstado" class ="form-control" asp-items="ViewBag.IdEstado"></select>
+                <select asp-for="IdEstado" class="form-control" asp-items="ViewBag.IdEstado"></select>
             </div>
             <div class="form-group mb-2">
                 <label asp-for="IdIdioma" style="font-weight: bold;" class="control-label"></label>
-                <select asp-for="IdIdioma" class ="form-control" asp-items="ViewBag.IdIdioma"></select>
+                <select asp-for="IdIdioma" class="form-control" asp-items="ViewBag.IdIdioma"></select>
             </div>
             <div class="form-group mb-2">
                 <label asp-for="IdCalificacion" style="font-weight: bold;" class="control-label"></label>
@@ -44,7 +44,7 @@
                 <label asp-for="Foto" style="font-weight: bold;" class="control-label"></label>
                 <img id="imagen" src="" class="rounded-circle img-thumbnail"
                      style="max-width: 100px; max-height: 100px; display: none;" asp-append-version="true" />
-                <input type="file" id="seleccionImg" name="imagen" class="form-control" accept="image/jpg"/>
+                <input type="file" id="seleccionImg" name="imagen" class="form-control" accept="image/jpg" />
             </div>
             <div class="form-group mb-2">
                 <label for="autoresSeleccionados" style="font-weight: bold;">Seleccionar autores</label>
@@ -59,7 +59,7 @@
                     }
                 }
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-3">
                 <label for="autoresSeleccionados" style="font-weight: bold;">Seleccionar categorías</label>
                 @if (ViewBag.Categorias != null)
                 {
@@ -72,19 +72,31 @@
                     }
                 }
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-5">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
+<form asp-action="Importar" enctype="multipart/form-data">
+    <div class="form-group mb-3">
+        <label class="control-label" style="font-weight: bold">Seleccione archivo CSV para importar alumnos</label>
+        <br />
+        <input type="file" id="import" name="csvFile" accept=".csv" />
+    </div>
+    <div class="form-group mb-2">
+        <input type="submit" value="Importar" class="btn btn-primary" />
+    </div>
+</form>
 
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="~/js//preview.js"></script>

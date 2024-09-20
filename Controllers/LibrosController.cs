@@ -12,13 +12,13 @@ namespace WebAppLibros.Controllers
     public class LibrosController : Controller
     {
         private readonly AppDBcontext _context;
-        private readonly IWebHostEnvironment _env;
+        private readonly IWebHostEnvironment env;
 
         // inyección de dependencia SQL
         public LibrosController(AppDBcontext context, IWebHostEnvironment env)
         {
             _context = context;
-            _env = env;
+            this.env = env;
         }
 
         //public LibrosController()
@@ -33,6 +33,90 @@ namespace WebAppLibros.Controllers
             //Agregando theninclude también se carga la información del
             //autor, no hay otra forma de hacerlo
             return View(await appDBcontext.ToListAsync());
+        }
+
+        // IMPORT
+        public async Task<IActionResult> Importar()
+        {
+            var archivos = HttpContext.Request.Form.Files;
+            if (archivos != null && archivos.Count > 0)
+            {
+                var archivo = archivos[0];
+                if (archivo.Length > 0)
+                {
+                    var pathDestino = Path.Combine(env.WebRootPath, "importaciones");
+                    var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(archivo.FileName);
+                    var rutaDestino = Path.Combine(pathDestino, archivoDestino);
+
+                    // Asegúrate de que la carpeta de destino exista
+                    if (!Directory.Exists(pathDestino))
+                    {
+                        Directory.CreateDirectory(pathDestino);
+                    }
+
+                    using (var filestream = new FileStream(rutaDestino, FileMode.Create))
+                    {
+                        archivo.CopyTo(filestream);
+                    }
+
+                    try
+                    {
+                        using (var file = new FileStream(rutaDestino, FileMode.Open))
+                        {
+                            List<string> renglones = new List<string>();
+                            List<Libro> LibrosArch = new List<Libro>();
+
+                            using (StreamReader fileContent = new StreamReader(file, System.Text.Encoding.UTF8))
+                            {
+                                while (!fileContent.EndOfStream)
+                                {
+                                    renglones.Add(fileContent.ReadLine());
+                                }
+                            }
+                            if (renglones.Count > 0)
+                            {
+                                foreach (var renglon in renglones)
+                                {
+                                    string[] data = renglon.Split(';');
+                                    // Verificar si tiene exactamente 6 columnas
+                                    if (data.Length == 6)
+                                    {
+                                        Libro libro = new Libro
+                                        {
+                                            Titulo = data[0].Trim(),
+                                            CantidadCopias = int.Parse(data[1].Trim()),
+                                            CantidadPags = int.Parse(data[2].Trim()),
+                                            IdEstado = int.Parse(data[3].Trim()), // ID del estado
+                                            IdIdioma = int.Parse(data[4].Trim()), // ID del idioma
+                                            IdCalificacion = int.Parse(data[5].Trim()), // Calificación
+                                        };
+                                        LibrosArch.Add(libro);
+                                    }
+                                }
+
+                                if (LibrosArch.Count > 0)
+                                {
+                                    _context.AddRange(LibrosArch);
+                                    await _context.SaveChangesAsync();
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejo de errores al leer el archivo o guardar en la base de datos
+                        ModelState.AddModelError("", $"Error al procesar el archivo: {ex.Message}");
+                        return View("Error");
+                    }
+                }
+            }
+            var appDBcontext = _context.Libros
+                .Include(l => l.Estado)
+                .Include(l => l.Idioma)
+                .Include(l => l.Calificacion)
+                .Include(l => l.LibrosAutores).ThenInclude(la => la.Autor)
+                .Include(l => l.LibrosCategorias).ThenInclude(la => la.Categoria);
+            return View("Index", await appDBcontext.ToListAsync());
         }
 
         // GET: Libros/Details/5
@@ -89,7 +173,7 @@ namespace WebAppLibros.Controllers
                     var archivoFoto = archivos[0];
                     if (archivoFoto.Length > 0)
                     {
-                        var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
+                        var rutaDestino = Path.Combine(env.WebRootPath, "fotografias");
                         var extArch = Path.GetExtension(archivoFoto.FileName);
                         // Generar un nombre único para el archivo
                         var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
@@ -102,7 +186,7 @@ namespace WebAppLibros.Controllers
                         }
                     }
                 }
-                
+
                 // Guardar el libro en la base de datos
                 _context.Add(libro);
                 await _context.SaveChangesAsync();
@@ -161,7 +245,7 @@ namespace WebAppLibros.Controllers
             var libro = await _context.Libros
                 .Include(l => l.LibrosAutores)
                 .ThenInclude(la => la.Autor)
-                .Include(l=> l.LibrosCategorias)
+                .Include(l => l.LibrosCategorias)
                 .ThenInclude(la => la.Categoria)
                 .FirstOrDefaultAsync(m => m.IdLibro == id);
 
@@ -213,7 +297,7 @@ namespace WebAppLibros.Controllers
                         var archivoFoto = archivos[0];
                         if (archivoFoto.Length > 0)
                         {
-                            var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
+                            var rutaDestino = Path.Combine(env.WebRootPath, "fotografias");
                             var extArch = Path.GetExtension(archivoFoto.FileName);
                             var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
 
