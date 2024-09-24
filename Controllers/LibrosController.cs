@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +13,13 @@ namespace WebAppLibros.Controllers
     public class LibrosController : Controller
     {
         private readonly AppDBcontext _context;
-        private readonly IWebHostEnvironment env;
+        private readonly IWebHostEnvironment _env;
 
         // inyección de dependencia SQL
         public LibrosController(AppDBcontext context, IWebHostEnvironment env)
         {
             _context = context;
-            this.env = env;
+            _env = env;
         }
 
         //public LibrosController()
@@ -44,7 +45,7 @@ namespace WebAppLibros.Controllers
                 var archivo = archivos[0];
                 if (archivo.Length > 0)
                 {
-                    var pathDestino = Path.Combine(env.WebRootPath, "importaciones");
+                    var pathDestino = Path.Combine(_env.WebRootPath, "importaciones");
                     var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(archivo.FileName);
                     var rutaDestino = Path.Combine(pathDestino, archivoDestino);
 
@@ -106,7 +107,14 @@ namespace WebAppLibros.Controllers
                     {
                         // Manejo de errores al leer el archivo o guardar en la base de datos
                         ModelState.AddModelError("", $"Error al procesar el archivo: {ex.Message}");
-                        return View("Error");
+
+                        // Crea un modelo vacío o uno con datos relevantes para la vista "Error"
+                        var errorModel = new ErrorViewModel
+                        {
+                            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+                        };
+
+                        return View("Error", errorModel);
                     }
                 }
             }
@@ -118,6 +126,147 @@ namespace WebAppLibros.Controllers
                 .Include(l => l.LibrosCategorias).ThenInclude(la => la.Categoria);
             return View("Index", await appDBcontext.ToListAsync());
         }
+
+        //// POST: Libros/Importar
+        //[HttpPost]
+        //public IActionResult Importar(IFormFile csvFile)
+        //{
+        //    try
+        //    {
+        //        if (csvFile != null && csvFile.Length > 0)
+        //        {
+        //            List<Libro> libros = new List<Libro>();
+        //            using (var reader = new StreamReader(csvFile.OpenReadStream()))
+        //            {
+        //                string? line;
+        //                while ((line = reader.ReadLine()) != null)
+        //                {
+        //                    var campos = line.Split(",");
+
+        //                    if (campos.Length == 5) // Asegúrate de que haya exactamente 5 columnas en el CSV
+        //                    {
+        //                        Libro libro = new Libro
+        //                        {
+        //                            Titulo = campos[0],
+        //                            CantidadCopias = Convert.ToInt32(campos[1]),
+        //                            CantidadPags = Convert.ToInt32(campos[2]),
+        //                            IdEstado = Convert.ToInt32(campos[3]),
+        //                            IdIdioma = Convert.ToInt32(campos[4])
+        //                        };
+        //                        libros.Add(libro);
+        //                    }
+        //                }
+        //            }
+
+        //            _context.Libros.AddRange(libros);
+        //            _context.SaveChanges();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Manejar el error adecuadamente
+        //        Console.WriteLine(ex.Message);
+        //        return View("Error");
+        //    }
+
+        //    // Redirige correctamente a la acción Index en el controlador Libros
+        //    return RedirectToAction("Index", "Libros");
+        //}
+
+
+        //public async Task<IActionResult> Importar()
+        //{
+        //    ViewData["Error"] = "Error: el archivo CSV enviado no es correcto.";
+
+        //    var archivos = HttpContext.Request.Form.Files;
+        //    if (archivos != null && archivos.Count > 0)
+        //    {
+        //        var archivo = archivos[0];
+        //        if (archivo.Length > 0)
+        //        {
+        //            var rutaDestino = Path.Combine(_env.WebRootPath, "importaciones");
+        //            var extArch = Path.GetExtension(archivo.FileName);
+        //            if (extArch == ".csv")
+        //            {
+        //                var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
+        //                var rutaCompleta = Path.Combine(rutaDestino, archivoDestino);
+
+        //                using (var filestream = new FileStream(rutaCompleta, FileMode.Create))
+        //                {
+        //                    archivo.CopyTo(filestream);
+        //                }
+
+        //                using (var file = new FileStream(rutaCompleta, FileMode.Open))
+        //                {
+        //                    List<string> renglones = new List<string>();
+        //                    List<Libro> ListaLibros = new List<Libro>();
+
+        //                    StreamReader fileContent = new StreamReader(file);
+        //                    do
+        //                    {
+        //                        renglones.Add(fileContent.ReadLine());
+        //                    }
+        //                    while (!fileContent.EndOfStream);
+
+        //                    foreach (var reng in renglones)
+        //                    {
+        //                        string[] datos = reng.Split(";");
+
+        //                        if (datos.Length >= 6 &&
+        //                            !string.IsNullOrWhiteSpace(datos[0]) && // Título
+        //                            int.TryParse(datos[1], out int cantidadCopias) && // CantidadCopias
+        //                            int.TryParse(datos[2], out int cantidadPags) && // CantidadPags
+        //                            int.TryParse(datos[3], out int idEstado) && // Estado
+        //                            int.TryParse(datos[4], out int idIdioma) && // Idioma
+        //                            int.TryParse(datos[5], out int idCalificacion)) // Calificación
+        //                        {
+        //                            var libroRepetido = _context.Libros
+        //                                .Where(e => e.Titulo == datos[0]).FirstOrDefault();
+        //                            if (libroRepetido == null)
+        //                            {
+        //                                var estado = _context.Estados.Find(idEstado);
+        //                                var idioma = _context.Idiomas.Find(idIdioma);
+        //                                var calificacion = _context.Calificaciones.Find(idCalificacion);
+
+        //                                if (estado != null && idioma != null && calificacion != null)
+        //                                {
+        //                                    Libro nuevoLibro = new Libro
+        //                                    {
+        //                                        Titulo = datos[0],
+        //                                        CantidadCopias = cantidadCopias,
+        //                                        CantidadPags = cantidadPags,
+        //                                        IdEstado = idEstado,
+        //                                        IdIdioma = idIdioma,
+        //                                        IdCalificacion = idCalificacion,
+        //                                        Foto = datos.Length > 6 ? datos[6] : null // Manejar foto opcional
+        //                                    };
+        //                                    ListaLibros.Add(nuevoLibro);
+        //                                }
+        //                            }
+        //                        }
+        //                    }
+
+        //                    if (renglones.Count() == ListaLibros.Count() + 1)
+        //                    {
+        //                        _context.Libros.AddRange(ListaLibros);
+        //                        await _context.SaveChangesAsync();
+
+        //                        ViewData["Success"] = "Importación realizada con éxito.";
+        //                        return RedirectToAction(nameof(Index));
+        //                    }
+        //                    else
+        //                    {
+        //                        ViewData["Error"] = "Existen registros en el archivo repetidos o inválidos.";
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+
+        //    return View("Index", _context.Libros.Include(e => e.Estado).ToList());
+        //}
+
+
 
         // GET: Libros/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -173,7 +322,7 @@ namespace WebAppLibros.Controllers
                     var archivoFoto = archivos[0];
                     if (archivoFoto.Length > 0)
                     {
-                        var rutaDestino = Path.Combine(env.WebRootPath, "fotografias");
+                        var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
                         var extArch = Path.GetExtension(archivoFoto.FileName);
                         // Generar un nombre único para el archivo
                         var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
@@ -297,7 +446,7 @@ namespace WebAppLibros.Controllers
                         var archivoFoto = archivos[0];
                         if (archivoFoto.Length > 0)
                         {
-                            var rutaDestino = Path.Combine(env.WebRootPath, "fotografias");
+                            var rutaDestino = Path.Combine(_env.WebRootPath, "fotografias");
                             var extArch = Path.GetExtension(archivoFoto.FileName);
                             var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
 

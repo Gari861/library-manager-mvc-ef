@@ -71,22 +71,28 @@
                 </td>
 
                 <td>
-                    @* Recorremos modelo libroautor y mostramos el nombre en rel muchos a muchos *@
-                    @foreach (var libroAutor in item.LibrosAutores)
+                    @if (item.LibrosAutores != null)
                     {
-                        <p>
-                            -
-                            @(libroAutor.Autor.Nombre + " " + libroAutor.Autor.Apellido)
-                        </p>
+                        @* Recorremos modelo libroautor y mostramos el nombre en rel muchos a muchos *@
+                        @foreach (var libroAutor in item.LibrosAutores)
+                        {
+                            <p>
+                                -
+                                @(libroAutor.Autor.Nombre + " " + libroAutor.Autor.Apellido)
+                            </p>
+                        }
                     }
                 </td>
                 <td>
-                    @foreach (var libroCategoria in item.LibrosCategorias)
+                    @if (item.LibrosCategorias != null)
                     {
-                        <p>
-                            -
-                            @(libroCategoria.Categoria.Tipo)
-                        </p>
+                        @foreach (var libroCategoria in item.LibrosCategorias)
+                        {
+                            <p>
+                                -
+                                @(libroCategoria.Categoria.Tipo)
+                            </p>
+                        }
                     }
                 </td>
                 <td>

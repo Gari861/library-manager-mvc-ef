@@ -1,315 +1,299 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebAppLibros.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png",
+      "PackagePath": "staticwebassets\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\52d84ab96b884fa296142c2df68c411f.png",
+      "PackagePath": "staticwebassets\\Fotografias\\52d84ab96b884fa296142c2df68c411f.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
+      "PackagePath": "staticwebassets\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg",
+      "PackagePath": "staticwebassets\\Fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg",
+      "PackagePath": "staticwebassets\\Fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png",
-      "PackagePath": "staticwebassets\\fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
+      "PackagePath": "staticwebassets\\importaciones\\09e27aeeaac3423e9447616493265741.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\52d84ab96b884fa296142c2df68c411f.png",
-      "PackagePath": "staticwebassets\\fotografias\\52d84ab96b884fa296142c2df68c411f.png"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\2d2bc50204184e6fa98dacc6bbdc5852.csv",
+      "PackagePath": "staticwebassets\\importaciones\\2d2bc50204184e6fa98dacc6bbdc5852.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
-      "PackagePath": "staticwebassets\\fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\3b20c73397b0425fa3afcc16de3dbc66.csv",
+      "PackagePath": "staticwebassets\\importaciones\\3b20c73397b0425fa3afcc16de3dbc66.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg",
-      "PackagePath": "staticwebassets\\fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\4a71ae5d45cf4e0b953e387740eadb50.csv",
+      "PackagePath": "staticwebassets\\importaciones\\4a71ae5d45cf4e0b953e387740eadb50.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg",
-      "PackagePath": "staticwebassets\\fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\9de4f3a202834bd9a201dddc63c8a154.csv",
+      "PackagePath": "staticwebassets\\importaciones\\9de4f3a202834bd9a201dddc63c8a154.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\042cff90bdc44b1288520c7db3125394.csv",
-      "PackagePath": "staticwebassets\\importaciones\\042cff90bdc44b1288520c7db3125394.csv"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\a347e8b3cd264142bcf6a422ba9f1e16.csv",
+      "PackagePath": "staticwebassets\\importaciones\\a347e8b3cd264142bcf6a422ba9f1e16.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\06cf626ab31f43c2bc0a0a153f5cb22b.csv",
-      "PackagePath": "staticwebassets\\importaciones\\06cf626ab31f43c2bc0a0a153f5cb22b.csv"
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\b43ec29dbdbb4f1cbb81674343376e1a.csv",
+      "PackagePath": "staticwebassets\\importaciones\\b43ec29dbdbb4f1cbb81674343376e1a.csv"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\16156ac16777432aacffe212778748e8.csv",
-      "PackagePath": "staticwebassets\\importaciones\\16156ac16777432aacffe212778748e8.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\2fd346a7d66c4fdb88aa183f6e4e0adf.csv",
-      "PackagePath": "staticwebassets\\importaciones\\2fd346a7d66c4fdb88aa183f6e4e0adf.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\47ded9dea58745b8a7e8da22b93e500f.csv",
-      "PackagePath": "staticwebassets\\importaciones\\47ded9dea58745b8a7e8da22b93e500f.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\48bc08bebaac4f61ae990a2b615ea7ea.csv",
-      "PackagePath": "staticwebassets\\importaciones\\48bc08bebaac4f61ae990a2b615ea7ea.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\5e8acb6335a04af29fb0d855935b80b5.csv",
-      "PackagePath": "staticwebassets\\importaciones\\5e8acb6335a04af29fb0d855935b80b5.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\9cc568619d8a45e781911f03080c44ff.csv",
-      "PackagePath": "staticwebassets\\importaciones\\9cc568619d8a45e781911f03080c44ff.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\c112690e4c19480c905f8214f112b07e.csv",
-      "PackagePath": "staticwebassets\\importaciones\\c112690e4c19480c905f8214f112b07e.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\e7496c0083ee4fecb05d7a03d6dc4e72.csv",
-      "PackagePath": "staticwebassets\\importaciones\\e7496c0083ee4fecb05d7a03d6dc4e72.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\ef555fb19844492d9042b720790648e5.csv",
-      "PackagePath": "staticwebassets\\importaciones\\ef555fb19844492d9042b720790648e5.csv"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\preview.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\js\\preview.js",
       "PackagePath": "staticwebassets\\js\\preview.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

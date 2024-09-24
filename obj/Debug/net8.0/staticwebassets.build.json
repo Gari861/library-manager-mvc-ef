@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cSYQtx3I47QXLqjuRvwpnNTQKKhOm/6him6kmymF1Vk=",
+  "Hash": "01GbrwBcdQ00fZGZo9mSFXtCjMTtQRZYG1IFvhp+RRc=",
   "Source": "WebAppLibros",
   "BasePath": "_content/WebAppLibros",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAppLibros\\wwwroot",
       "Source": "WebAppLibros",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppLibros.styles.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppLibros.styles.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "WebAppLibros.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppLibros.styles.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebAppLibros.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "WebAppLibros.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppLibros.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\css\\site.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\favicon.ico",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "fotografias/1b0db88fa5e64a35ae92594de4afb98c.png",
+      "RelativePath": "Fotografias/1b0db88fa5e64a35ae92594de4afb98c.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png"
+      "OriginalItemSpec": "wwwroot\\Fotografias\\1b0db88fa5e64a35ae92594de4afb98c.png"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\52d84ab96b884fa296142c2df68c411f.png",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\52d84ab96b884fa296142c2df68c411f.png",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "fotografias/52d84ab96b884fa296142c2df68c411f.png",
+      "RelativePath": "Fotografias/52d84ab96b884fa296142c2df68c411f.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +128,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotografias\\52d84ab96b884fa296142c2df68c411f.png"
+      "OriginalItemSpec": "wwwroot\\Fotografias\\52d84ab96b884fa296142c2df68c411f.png"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "fotografias/5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
+      "RelativePath": "Fotografias/5a28671b7e304f78bcad53fcd8eba1c5.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg"
+      "OriginalItemSpec": "wwwroot\\Fotografias\\5a28671b7e304f78bcad53fcd8eba1c5.jpeg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "fotografias/9670eaad4f1d4a49bd88c635ae067b09.jpg",
+      "RelativePath": "Fotografias/9670eaad4f1d4a49bd88c635ae067b09.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg"
+      "OriginalItemSpec": "wwwroot\\Fotografias\\9670eaad4f1d4a49bd88c635ae067b09.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\Fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "fotografias/f89747cde12543c6a8c0de65b1f56771.jpg",
+      "RelativePath": "Fotografias/f89747cde12543c6a8c0de65b1f56771.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg"
+      "OriginalItemSpec": "wwwroot\\Fotografias\\f89747cde12543c6a8c0de65b1f56771.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\042cff90bdc44b1288520c7db3125394.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/042cff90bdc44b1288520c7db3125394.csv",
+      "RelativePath": "importaciones/09e27aeeaac3423e9447616493265741.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\042cff90bdc44b1288520c7db3125394.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\06cf626ab31f43c2bc0a0a153f5cb22b.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\2d2bc50204184e6fa98dacc6bbdc5852.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/06cf626ab31f43c2bc0a0a153f5cb22b.csv",
+      "RelativePath": "importaciones/2d2bc50204184e6fa98dacc6bbdc5852.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,15 +223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\06cf626ab31f43c2bc0a0a153f5cb22b.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\2d2bc50204184e6fa98dacc6bbdc5852.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\16156ac16777432aacffe212778748e8.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\3b20c73397b0425fa3afcc16de3dbc66.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/16156ac16777432aacffe212778748e8.csv",
+      "RelativePath": "importaciones/3b20c73397b0425fa3afcc16de3dbc66.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -242,15 +242,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\16156ac16777432aacffe212778748e8.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\3b20c73397b0425fa3afcc16de3dbc66.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\2fd346a7d66c4fdb88aa183f6e4e0adf.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\4a71ae5d45cf4e0b953e387740eadb50.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/2fd346a7d66c4fdb88aa183f6e4e0adf.csv",
+      "RelativePath": "importaciones/4a71ae5d45cf4e0b953e387740eadb50.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,15 +261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\2fd346a7d66c4fdb88aa183f6e4e0adf.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\4a71ae5d45cf4e0b953e387740eadb50.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\47ded9dea58745b8a7e8da22b93e500f.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\9de4f3a202834bd9a201dddc63c8a154.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/47ded9dea58745b8a7e8da22b93e500f.csv",
+      "RelativePath": "importaciones/9de4f3a202834bd9a201dddc63c8a154.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,15 +280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\47ded9dea58745b8a7e8da22b93e500f.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\9de4f3a202834bd9a201dddc63c8a154.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\48bc08bebaac4f61ae990a2b615ea7ea.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\a347e8b3cd264142bcf6a422ba9f1e16.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/48bc08bebaac4f61ae990a2b615ea7ea.csv",
+      "RelativePath": "importaciones/a347e8b3cd264142bcf6a422ba9f1e16.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,15 +299,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\48bc08bebaac4f61ae990a2b615ea7ea.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\a347e8b3cd264142bcf6a422ba9f1e16.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\5e8acb6335a04af29fb0d855935b80b5.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\b43ec29dbdbb4f1cbb81674343376e1a.csv",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/5e8acb6335a04af29fb0d855935b80b5.csv",
+      "RelativePath": "importaciones/b43ec29dbdbb4f1cbb81674343376e1a.csv",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,89 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\5e8acb6335a04af29fb0d855935b80b5.csv"
+      "OriginalItemSpec": "wwwroot\\importaciones\\b43ec29dbdbb4f1cbb81674343376e1a.csv"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\9cc568619d8a45e781911f03080c44ff.csv",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\js\\preview.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
-      "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/9cc568619d8a45e781911f03080c44ff.csv",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\9cc568619d8a45e781911f03080c44ff.csv"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\c112690e4c19480c905f8214f112b07e.csv",
-      "SourceId": "WebAppLibros",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
-      "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/c112690e4c19480c905f8214f112b07e.csv",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\c112690e4c19480c905f8214f112b07e.csv"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\e7496c0083ee4fecb05d7a03d6dc4e72.csv",
-      "SourceId": "WebAppLibros",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
-      "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/e7496c0083ee4fecb05d7a03d6dc4e72.csv",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\e7496c0083ee4fecb05d7a03d6dc4e72.csv"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\importaciones\\ef555fb19844492d9042b720790648e5.csv",
-      "SourceId": "WebAppLibros",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
-      "BasePath": "_content/WebAppLibros",
-      "RelativePath": "importaciones/ef555fb19844492d9042b720790648e5.csv",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\importaciones\\ef555fb19844492d9042b720790648e5.csv"
-    },
-    {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\preview.js",
-      "SourceId": "WebAppLibros",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "js/preview.js",
       "AssetKind": "All",
@@ -416,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\js\\preview.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\js\\site.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -435,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -454,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -473,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -492,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -511,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -530,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -549,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -568,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -587,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -606,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -625,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -644,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -663,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -682,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -701,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -720,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -739,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -758,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -777,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -796,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -815,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -834,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -910,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -929,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -948,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -967,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -986,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1005,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1024,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1062,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1081,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1100,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1138,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1157,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1176,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1195,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1214,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1233,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1252,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1271,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1290,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1309,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1328,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1347,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1366,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1385,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1404,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1423,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1442,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1461,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1480,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1499,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WebAppLibros",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\MVC.EF.CRUD\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\",
       "BasePath": "_content/WebAppLibros",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
