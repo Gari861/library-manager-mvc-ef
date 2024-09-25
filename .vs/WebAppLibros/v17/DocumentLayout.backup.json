@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc_ef_crud\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|solutionrelative:views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5E0A967-B75D-4539-9BA5-88377A4575F3}|WebAppLibros.csproj|c:\\users\\user\\desktop\\crud\\mvc_ef_crud\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,27 +38,24 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "09e27aeeaac3423e9447616493265741.csv",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
-              "RelativeDocumentMoniker": "wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
-              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
-              "RelativeToolTip": "wwwroot\\importaciones\\09e27aeeaac3423e9447616493265741.csv",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\Views\\Libros\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Libros\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\Views\\Libros\\Index.cshtml",
+              "RelativeToolTip": "Views\\Libros\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-09-24T19:21:51.752Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T02:27:01.613Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,7 +65,7 @@
               "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\crud\\mvc_ef_crud\\Controllers\\LibrosController.cs",
               "RelativeToolTip": "Controllers\\LibrosController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T20:42:17.529Z",
               "EditorCaption": ""
@@ -83,7 +80,8 @@
               "RelativeToolTip": "Views\\Libros\\Create.cshtml",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAE4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T10:34:00.278Z"
+              "WhenOpened": "2024-09-19T10:34:00.278Z",
+              "EditorCaption": ""
             }
           ]
         }

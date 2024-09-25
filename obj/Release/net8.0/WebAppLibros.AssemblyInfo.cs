@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppLibros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8ae9b7d438a80f23759263d85cadc27c1925243")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52c0269ea0383ceef6a8ad7ddfba8c1315c8cc45")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppLibros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppLibros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

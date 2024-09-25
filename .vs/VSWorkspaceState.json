@@ -8,6 +8,6 @@
     "\\wwwroot",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\Controllers\\LibrosController.cs",
+  "SelectedNode": "\\Views\\Libros\\Create.cshtml",
   "PreviewInSolutionExplorer": false
 }
