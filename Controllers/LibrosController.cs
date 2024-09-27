@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SpreadsheetLight;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -37,7 +38,7 @@ namespace WebAppLibros.Controllers
         }
 
         // IMPORT
-        public async Task<IActionResult> Importar()
+        public async Task<IActionResult> ImportarCsv()
         {
             var archivos = HttpContext.Request.Form.Files;
             if (archivos != null && archivos.Count > 0)
@@ -119,6 +120,73 @@ namespace WebAppLibros.Controllers
             }
             return RedirectToAction("Index", "Libros");
         }
+        public async Task<IActionResult> ImportarExcel()
+        {
+            var archivos = HttpContext.Request.Form.Files;
+            if (archivos != null && archivos.Count > 0)
+            {
+                var archivoExcel = archivos[0];
+                if (archivoExcel.Length > 0)
+                {
+                    var rutaDestino = Path.Combine(_env.WebRootPath, "importaciones");
+                    var extArch = Path.GetExtension(archivoExcel.FileName);
+                    if (extArch == ".xlsx" || extArch == ".xls")
+                    {
+                        var archivoDestino = Guid.NewGuid().ToString().Replace("-", "") + extArch;
+                        var rutaCompleta = Path.Combine(rutaDestino, archivoDestino);
+
+                        using (var filestream = new FileStream(rutaCompleta, FileMode.Create))
+                        {
+                            archivoExcel.CopyTo(filestream);
+                        }
+
+                        SLDocument archXls = new SLDocument(rutaCompleta);
+                        if (archXls != null)
+                        {
+                            List<Libro> ListaLibros = new List<Libro>();
+
+                            int fila = 1;
+                            while (!string.IsNullOrEmpty(archXls.GetCellValueAsString(fila, 1))) // Verifica si hay un título en la columna 1
+                            {
+                                try
+                                {
+                                    Libro libro = new Libro
+                                    {
+                                        Titulo = archXls.GetCellValueAsString(fila, 1), // Título del libro
+                                        CantidadCopias = int.Parse(archXls.GetCellValueAsString(fila, 2)), // Cantidad de copias
+                                        CantidadPags = int.Parse(archXls.GetCellValueAsString(fila, 3)), // Cantidad de páginas
+                                        IdEstado = int.Parse(archXls.GetCellValueAsString(fila, 4)), // ID del estado
+                                        IdIdioma = int.Parse(archXls.GetCellValueAsString(fila, 5)), // ID del idioma
+                                        IdCalificacion = int.Parse(archXls.GetCellValueAsString(fila, 6)) // Calificación
+                                    };
+
+                                    ListaLibros.Add(libro);
+                                }
+                                catch (Exception ex)
+                                {
+                                    ViewData["Error"] = $"Error al procesar la fila {fila}: {ex.Message}";
+                                    return View("Error");
+                                }
+                                fila++;
+                            }
+
+                            if (ListaLibros.Count > 0)
+                            {
+                                _context.AddRange(ListaLibros);
+                                await _context.SaveChangesAsync();
+                            }
+                            else
+                            {
+                                ViewData["Error"] = "No se encontraron datos válidos en el archivo Excel.";
+                            }
+                        }
+                    }
+                }
+            }
+            return RedirectToAction("Index", "Libros");
+        }
+
+
 
         // GET: Libros/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -1768,3 +1768,6 @@ C:\Users\User\Desktop\crud\mvc_ef_crud\obj\Debug\net8.0\scopedcss\projectbundle\
 C:\Users\User\Desktop\crud\mvc_ef_crud\obj\Debug\net8.0\WebAppLi.66822402.Up2Date
 C:\Users\User\Desktop\crud\mvc_ef_crud\obj\Debug\net8.0\WebAppLibros.genruntimeconfig.cache
 C:\Users\User\Desktop\crud\mvc_ef_crud\obj\Debug\net8.0\ref\WebAppLibros.dll
+C:\Users\User\Desktop\crud\mvc_ef_crud\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\User\Desktop\crud\mvc_ef_crud\bin\Debug\net8.0\SpreadsheetLight.dll
+C:\Users\User\Desktop\crud\mvc_ef_crud\bin\Debug\net8.0\System.IO.Packaging.dll
